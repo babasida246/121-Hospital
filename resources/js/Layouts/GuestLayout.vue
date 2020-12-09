@@ -23,11 +23,11 @@
           </div>
       </div>
     </header>
-    <application-nav-bar class="col-md-3 col-lg-2 d-md-none army-color"></application-nav-bar>
+    <application-nav-bar class="d-lg-none army-color"></application-nav-bar>
     <div class="container-fluid full-height">
       <div class="row flex-xl-nowrap full-height">
-        <application-nav-bar class="col-md-3 col-lg-2 d-none d-md-block army-color"></application-nav-bar>
-        <div class="col-md-9 col-lg-10 nopadding">
+        <application-nav-bar class="col-lg-2 d-none d-lg-block army-color"></application-nav-bar>
+        <div class="col-md-8 col-lg-10 nopadding">
           <main class="shadow-lg ms-md-3 mt-md-1 rounded">
             <div class="card rounded">
               <div class="card-header rounded">Featured</div>

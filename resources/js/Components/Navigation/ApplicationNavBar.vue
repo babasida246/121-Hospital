@@ -1,7 +1,7 @@
   <template>
-  <nav class="navbar navbar-expand-sm navbar-dark shadow-lg rounded mt-3">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg rounded mt-3">
     <div class="container-fluid">
-      <a class="navbar-brand d-md-none" href="#">Menu</a>
+      <a class="navbar-brand d-lg-none" href="#">Menu</a>
       <button
         class="navbar-toggler"
         type="button"

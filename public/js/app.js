@@ -15362,6 +15362,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -64727,7 +64733,7 @@ var render = function() {
   return _c(
     "nav",
     {
-      staticClass: "navbar navbar-expand-sm navbar-dark shadow-lg rounded mt-3"
+      staticClass: "navbar navbar-expand-lg navbar-dark shadow-lg rounded mt-3"
     },
     [_vm._m(0), _vm._v(" "), _c("nav-left")],
     1
@@ -64739,7 +64745,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container-fluid" }, [
-      _c("a", { staticClass: "navbar-brand d-md-none", attrs: { href: "#" } }, [
+      _c("a", { staticClass: "navbar-brand d-lg-none", attrs: { href: "#" } }, [
         _vm._v("Menu")
       ]),
       _vm._v(" "),
@@ -65134,8 +65140,8 @@ var render = function() {
                 _vm._v(" "),
                 _c("anchor-collapse", {
                   attrs: {
-                    CollapseTaget: "collapse-linhvuc",
-                    InnerData: "Lĩnh vực hoạt động"
+                    CollapseTaget: "collapse-canlamsang",
+                    InnerData: "Cận lâm sàng"
                   }
                 }),
                 _vm._v(" "),
@@ -65143,38 +65149,107 @@ var render = function() {
                   "div",
                   {
                     staticClass: "collapse ml-6",
-                    attrs: { id: "collapse-linhvuc" }
+                    attrs: { id: "collapse-canlamsang" }
                   },
                   [
-                    _c("nav-link", {
-                      staticClass: "nav-link align-bottom",
-                      attrs: { link: "homepage" }
-                    }),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Khoa Khám bệnh (C1)")]
+                    ),
                     _vm._v(" "),
-                    _c("nav-link", {
-                      staticClass: "nav-link align-bottom",
-                      attrs: { link: "homepage" }
-                    }),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Cấp cứu ban đầu (C2)")]
+                    ),
                     _vm._v(" "),
-                    _c("nav-link", {
-                      staticClass: "nav-link align-bottom",
-                      attrs: { link: "homepage" }
-                    }),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Xét nghiệm (C3)")]
+                    ),
                     _vm._v(" "),
-                    _c("nav-link", {
-                      staticClass: "nav-link align-bottom",
-                      attrs: { link: "homepage" }
-                    }),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Giải phẩu bệnh (C4)")]
+                    ),
                     _vm._v(" "),
-                    _c("nav-link", {
-                      staticClass: "nav-link align-bottom",
-                      attrs: { link: "homepage" }
-                    }),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Chuẩn đoán chức năng (C5)")]
+                    ),
                     _vm._v(" "),
-                    _c("nav-link", {
-                      staticClass: "nav-link align-bottom",
-                      attrs: { link: "homepage" }
-                    })
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Chuẩn đoán hình ảnh (C6)")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Khoa dược (C7)")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Nhà thuốc (C8)")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Trang bị (C9)")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Dinh dưỡng (C10)")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "nav-link",
+                      {
+                        staticClass: "nav-link align-bottom",
+                        attrs: { link: "homepage" }
+                      },
+                      [_vm._v("Kiểm soát nhiễm khuẩn (C11)")]
+                    )
                   ],
                   1
                 )
@@ -65203,35 +65278,59 @@ var render = function() {
                 attrs: { id: "collapse-linhvuc" }
               },
               [
-                _c("nav-link", {
-                  staticClass: "nav-link align-bottom",
-                  attrs: { link: "homepage" }
-                }),
+                _c(
+                  "nav-link",
+                  {
+                    staticClass: "nav-link align-bottom",
+                    attrs: { link: "homepage" }
+                  },
+                  [_vm._v("Khám chữa bệnh bảo hiểm y tế")]
+                ),
                 _vm._v(" "),
-                _c("nav-link", {
-                  staticClass: "nav-link align-bottom",
-                  attrs: { link: "homepage" }
-                }),
+                _c(
+                  "nav-link",
+                  {
+                    staticClass: "nav-link align-bottom",
+                    attrs: { link: "homepage" }
+                  },
+                  [_vm._v("Khám chữa bệnh theo yêu cầu")]
+                ),
                 _vm._v(" "),
-                _c("nav-link", {
-                  staticClass: "nav-link align-bottom",
-                  attrs: { link: "homepage" }
-                }),
+                _c(
+                  "nav-link",
+                  {
+                    staticClass: "nav-link align-bottom",
+                    attrs: { link: "homepage" }
+                  },
+                  [_vm._v("Khám sức khỏe")]
+                ),
                 _vm._v(" "),
-                _c("nav-link", {
-                  staticClass: "nav-link align-bottom",
-                  attrs: { link: "homepage" }
-                }),
+                _c(
+                  "nav-link",
+                  {
+                    staticClass: "nav-link align-bottom",
+                    attrs: { link: "homepage" }
+                  },
+                  [_vm._v("Kỹ thuật xét nghiệm")]
+                ),
                 _vm._v(" "),
-                _c("nav-link", {
-                  staticClass: "nav-link align-bottom",
-                  attrs: { link: "homepage" }
-                }),
+                _c(
+                  "nav-link",
+                  {
+                    staticClass: "nav-link align-bottom",
+                    attrs: { link: "homepage" }
+                  },
+                  [_vm._v("Kỹ thuật chuẩn đoán hình ảnh")]
+                ),
                 _vm._v(" "),
-                _c("nav-link", {
-                  staticClass: "nav-link align-bottom",
-                  attrs: { link: "homepage" }
-                })
+                _c(
+                  "nav-link",
+                  {
+                    staticClass: "nav-link align-bottom",
+                    attrs: { link: "homepage" }
+                  },
+                  [_vm._v("Phẫu thuật kỹ thuật cao")]
+                )
               ],
               1
             )
@@ -67674,9 +67773,7 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("application-nav-bar", {
-        staticClass: "col-md-3 col-lg-2 d-md-none army-color"
-      }),
+      _c("application-nav-bar", { staticClass: "d-lg-none army-color" }),
       _vm._v(" "),
       _c("div", { staticClass: "container-fluid full-height" }, [
         _c(
@@ -67684,7 +67781,7 @@ var render = function() {
           { staticClass: "row flex-xl-nowrap full-height" },
           [
             _c("application-nav-bar", {
-              staticClass: "col-md-3 col-lg-2 d-none d-md-block army-color"
+              staticClass: "col-lg-2 d-none d-lg-block army-color"
             }),
             _vm._v(" "),
             _vm._m(1)
@@ -67729,7 +67826,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-9 col-lg-10 nopadding" }, [
+    return _c("div", { staticClass: "col-md-8 col-lg-10 nopadding" }, [
       _c("main", { staticClass: "shadow-lg ms-md-3 mt-md-1 rounded" }, [
         _c("div", { staticClass: "card rounded" }, [
           _c("div", { staticClass: "card-header rounded" }, [
@@ -86762,8 +86859,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\WebSources\CMS\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\WebSources\CMS\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! D:\Websources\121-Hospital\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Websources\121-Hospital\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })

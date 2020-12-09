@@ -50,26 +50,32 @@
             <nav-link class="nav-link align-bottom" link="homepage">Tai - Mũi - Họng (B9)</nav-link>
           </div>
 
-          <anchor-collapse CollapseTaget="collapse-linhvuc" InnerData="Lĩnh vực hoạt động"></anchor-collapse>
-          <div class="collapse ml-6" id="collapse-linhvuc">
-            <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-            <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-            <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-            <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-            <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-            <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
+          <anchor-collapse CollapseTaget="collapse-canlamsang" InnerData="Cận lâm sàng"></anchor-collapse>
+          <div class="collapse ml-6" id="collapse-canlamsang">
+            <nav-link class="nav-link align-bottom" link="homepage">Khoa Khám bệnh (C1)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Cấp cứu ban đầu (C2)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Xét nghiệm (C3)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Giải phẩu bệnh (C4)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Chuẩn đoán chức năng (C5)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Chuẩn đoán hình ảnh (C6)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Khoa dược (C7)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Nhà thuốc (C8)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Trang bị (C9)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Dinh dưỡng (C10)</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Kiểm soát nhiễm khuẩn (C11)</nav-link>
+            
           </div>
        </div>
      </li>
      <li class="nav-item">
        <anchor-collapse CollapseTaget="collapse-linhvuc" InnerData="Lĩnh vực hoạt động"></anchor-collapse>
        <div class="collapse ml-6" id="collapse-linhvuc">
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Khám chữa bệnh bảo hiểm y tế</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Khám chữa bệnh theo yêu cầu</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Khám sức khỏe</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Kỹ thuật xét nghiệm</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Kỹ thuật chuẩn đoán hình ảnh</nav-link>
+            <nav-link class="nav-link align-bottom" link="homepage">Phẫu thuật kỹ thuật cao</nav-link>
        </div>
      </li>
      <li class="nav-item">
