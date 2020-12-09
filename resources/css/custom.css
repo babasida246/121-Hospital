@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+}
+.full-height{
+  min-height: 100%;
+  height: 100%;
+}
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.card{
+  margin-top: 20px;
+}
+.army-color{
+  background-color: #4b5320;
+}
