@@ -1,13 +1,13 @@
 <template>
   <a
-    class="nav-link"
+    class="nav-link fw-bold"
     data-bs-toggle="collapse"
     :href='"#" + CollapseTaget'
     role="button"
     aria-expanded="false"
     :aria-controls="CollapseTaget"
   >  
-  {{InnerData}}
+  {{InnerData}} <font-awesome-icon :icon="['fas', 'caret-down']" />
   </a>
 </template>
 
@@ -18,6 +18,9 @@ export default {
     "InnerData": String,
     "Icon": Array
   },
+  computed:{
+    
+  }
 };
 </script>
 

@@ -25,7 +25,7 @@
     </header>
     <application-nav-bar class="d-md-none army-color"></application-nav-bar>
     <div class="container-fluid full-height">
-      <div class="row flex-xl-nowrap full-height">
+      <div class="row flex-xl full-height">
         <application-nav-bar class="col-md-4 col-lg-2 d-none d-md-block army-color mt-3"></application-nav-bar>
         <div class="col-md-8 col-lg-10 nopadding">
           <main class="shadow-lg ms-md-3 mt-md-1 rounded">

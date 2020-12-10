@@ -1,5 +1,5 @@
 <template>
-    <inertia-link :href="route(link)" :class="classes">
+    <inertia-link :href="route(link)" :class="IsActive">
         <slot></slot>
     </inertia-link>
 </template>
@@ -8,7 +8,7 @@
     export default {
         props: ['link'],
         computed: {
-            classes() {
+            IsActive() {
                 return route().current(this.link)
                             ? 'active'
                             : ''

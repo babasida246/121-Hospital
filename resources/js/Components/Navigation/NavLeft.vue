@@ -2,8 +2,8 @@
   <div class="collapse navbar-collapse ms-1" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto flex-column">
       <li class="nav-item">
-        <anchor-collapse CollapseTaget="collapse-gioithieu" InnerData="Giới thiệu"></anchor-collapse>
-        <div class="collapse ml-6" id="collapse-gioithieu">
+        <anchor-collapse class="nav-item" CollapseTaget="collapse-gioithieu" InnerData="Giới thiệu"></anchor-collapse> 
+        <div class="collapse ms-3" id="collapse-gioithieu">
           <nav-link class="nav-link align-bottom" link="homepage">Thành tích đạt được</nav-link>
           <nav-link class="nav-link align-bottom" link="homepage">Chức năng nhiệm vụ</nav-link>
           <nav-link class="nav-link align-bottom" link="homepage">Lịch sử hình thành</nav-link>
@@ -11,12 +11,12 @@
         </div>
       </li>
      <li class="nav-item">
-        <anchor-collapse CollapseTaget="collapse-cocau" InnerData="Cơ cấu tổ chức"></anchor-collapse>
-        <div class="collapse ml-6" id="collapse-cocau">
+        <anchor-collapse class="nav-item" CollapseTaget="collapse-cocau" InnerData="Cơ cấu tổ chức"></anchor-collapse>
+        <div class="collapse ms-3" id="collapse-cocau">
           <nav-link class="nav-link align-bottom" link="homepage">Ban giám đốc</nav-link>
           
-          <anchor-collapse CollapseTaget="collapse-coquan" InnerData="Khối cơ quan"></anchor-collapse>
-          <div class="collapse ml-6" id="collapse-coquan">
+          <anchor-collapse class="nav-item" CollapseTaget="collapse-coquan" InnerData="Khối cơ quan"></anchor-collapse>
+          <div class="collapse ms-3" id="collapse-coquan">
             <nav-link class="nav-link align-bottom" link="homepage">Kế hoạch tổng hợp</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Chính trị</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Hậu cần</nav-link>
@@ -26,8 +26,8 @@
             <nav-link class="nav-link align-bottom" link="homepage">Khoa Huấn luyện</nav-link>
           </div>
 
-          <anchor-collapse CollapseTaget="collapse-khoinoi" InnerData="Khối nội"></anchor-collapse>
-          <div class="collapse ml-6" id="collapse-khoinoi">
+          <anchor-collapse class="nav-item" CollapseTaget="collapse-khoinoi" InnerData="Khối nội"></anchor-collapse>
+          <div class="collapse ms-3" id="collapse-khoinoi">
             <nav-link class="nav-link align-bottom" link="homepage">Nội tim mạch (A1)</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Nội tiêu hóa (A2)</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Thận nhân tạo (A3)</nav-link>
@@ -37,8 +37,8 @@
             <nav-link class="nav-link align-bottom" link="homepage">Y học cổ truyền (A7)</nav-link>
           </div>
 
-          <anchor-collapse CollapseTaget="collapse-khoingoai" InnerData="Khối ngoại"></anchor-collapse>
-          <div class="collapse ml-6" id="collapse-khoingoai">
+          <anchor-collapse class="nav-item" CollapseTaget="collapse-khoingoai" InnerData="Khối ngoại"></anchor-collapse>
+          <div class="collapse ms-3" id="collapse-khoingoai">
             <nav-link class="nav-link align-bottom" link="homepage">Chấn thương chỉnh hình (B1)</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Ngoại tổng quát - Lồng ngực (B2)</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Ngoại tiết niệu (B3)</nav-link>
@@ -50,8 +50,8 @@
             <nav-link class="nav-link align-bottom" link="homepage">Tai - Mũi - Họng (B9)</nav-link>
           </div>
 
-          <anchor-collapse CollapseTaget="collapse-canlamsang" InnerData="Cận lâm sàng"></anchor-collapse>
-          <div class="collapse ml-6" id="collapse-canlamsang">
+          <anchor-collapse class="nav-item" CollapseTaget="collapse-canlamsang" InnerData="Cận lâm sàng"></anchor-collapse>
+          <div class="collapse ms-3" id="collapse-canlamsang">
             <nav-link class="nav-link align-bottom" link="homepage">Khoa Khám bệnh (C1)</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Cấp cứu ban đầu (C2)</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Xét nghiệm (C3)</nav-link>
@@ -68,8 +68,8 @@
        </div>
      </li>
      <li class="nav-item">
-       <anchor-collapse CollapseTaget="collapse-linhvuc" InnerData="Lĩnh vực hoạt động"></anchor-collapse>
-       <div class="collapse ml-6" id="collapse-linhvuc">
+       <anchor-collapse class="nav-item" CollapseTaget="collapse-linhvuc" InnerData="Lĩnh vực hoạt động"></anchor-collapse>
+       <div class="collapse ms-3" id="collapse-linhvuc">
             <nav-link class="nav-link align-bottom" link="homepage">Khám chữa bệnh bảo hiểm y tế</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Khám chữa bệnh theo yêu cầu</nav-link>
             <nav-link class="nav-link align-bottom" link="homepage">Khám sức khỏe</nav-link>
@@ -79,8 +79,8 @@
        </div>
      </li>
      <li class="nav-item">
-       <anchor-collapse CollapseTaget="collapse-tintuc" InnerData="Tin tức"></anchor-collapse>
-       <div class="collapse ml-6" id="collapse-tintuc">
+       <anchor-collapse class="nav-item" CollapseTaget="collapse-tintuc" InnerData="Tin tức"></anchor-collapse>
+       <div class="collapse ms-3" id="collapse-tintuc">
          <nav-link class="nav-link align-bottom" link="homepage">Tin hoạt động</nav-link>
          <nav-link class="nav-link align-bottom" link="homepage">Thông tin y khoa</nav-link>
          <nav-link class="nav-link align-bottom" link="homepage">Nghiên cứu khoa học</nav-link>
@@ -88,8 +88,8 @@
        </div>
      </li>
      <li class="nav-item">
-       <anchor-collapse CollapseTaget="collapse-doingubacsi" InnerData="Đội ngũ bác sĩ"></anchor-collapse>
-       <div class="collapse ml-6" id="collapse-doingubacsi">
+       <anchor-collapse class="nav-item" CollapseTaget="collapse-doingubacsi" InnerData="Đội ngũ bác sĩ"></anchor-collapse>
+       <div class="collapse ms-3" id="collapse-doingubacsi">
          <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
          <nav-link class="nav-link align-bottom"></nav-link>
          <nav-link class="nav-link align-bottom"></nav-link>
@@ -99,8 +99,8 @@
        </div>
      </li>
      <li class="nav-item">
-       <anchor-collapse CollapseTaget="collapse-lichcongtac" InnerData="Lịch công tác"></anchor-collapse>
-       <div class="collapse ml-6" id="collapse-lichcongtac">
+       <anchor-collapse class="nav-item" CollapseTaget="collapse-lichcongtac" InnerData="Lịch công tác"></anchor-collapse>
+       <div class="collapse ms-3" id="collapse-lichcongtac">
          <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
          <nav-link class="nav-link align-bottom"></nav-link>
          <nav-link class="nav-link align-bottom"></nav-link>
