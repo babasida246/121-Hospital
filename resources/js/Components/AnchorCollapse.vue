@@ -6,7 +6,7 @@
     role="button"
     aria-expanded="false"
     :aria-controls="CollapseTaget"
-  >
+  >  
   {{InnerData}}
   </a>
 </template>
@@ -15,7 +15,8 @@
 export default {
   props: {
     "CollapseTaget": String,
-    "InnerData": String
+    "InnerData": String,
+    "Icon": Array
   },
 };
 </script>

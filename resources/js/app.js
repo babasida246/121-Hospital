@@ -8,14 +8,16 @@ import { InertiaApp } from '@inertiajs/inertia-vue';
 import { InertiaForm } from 'laravel-jetstream';
 import PortalVue from 'portal-vue';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret, faAddressBook } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import FontAwesome from '@fortawesome/fontawesome-free';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+library.add(fab, fas, far)
 
-library.add(faUserSecret, faAddressBook)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
-
 Vue.mixin({ methods: { route } });
 Vue.use(InertiaApp);
 Vue.use(InertiaForm);

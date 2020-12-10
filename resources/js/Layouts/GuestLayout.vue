@@ -1,13 +1,13 @@
 <template>
   <div class="full-height">
     <header
-      class="navbar navbar-expand navbar-dark army-color m-1 shadow-lg rounded flex-column flex-md-row"
+      class="navbar navbar-expand navbar-dark d-none d-md-block army-color m-1 shadow-lg rounded flex-column flex-md-row"
     >
       <div class="container-fluid">
           <a class="navbar-brand d-inline-block" href="#">
             <application-logo class="ms-3"></application-logo
-            ><application-name class="ps-2" id="app-name"></application-name>
-          </a>
+            ><application-name class="ps-2"></application-name>
+          </a>          
           <div class="navbar-nav-scroll ms-auto">
             <ul class="navbar-nav bd-navbar-nav">
               <li class="nav-item">
@@ -18,15 +18,15 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Liên hệ</a>
-              </li>
+              </li>      
             </ul>
           </div>
       </div>
     </header>
-    <application-nav-bar class="d-lg-none army-color"></application-nav-bar>
+    <application-nav-bar class="d-md-none army-color"></application-nav-bar>
     <div class="container-fluid full-height">
       <div class="row flex-xl-nowrap full-height">
-        <application-nav-bar class="col-lg-2 d-none d-lg-block army-color"></application-nav-bar>
+        <application-nav-bar class="col-md-4 col-lg-2 d-none d-md-block army-color mt-3"></application-nav-bar>
         <div class="col-md-8 col-lg-10 nopadding">
           <main class="shadow-lg ms-md-3 mt-md-1 rounded">
             <div class="card rounded">
@@ -52,8 +52,9 @@ import ApplicationHeader from "../Components/ApplicationHeader.vue";
 import ApplicationLogo from "../Components/ApplicationLogo.vue";
 import ApplicationName from "../Components/ApplicationName.vue";
 import ApplicationNavBar from "../Components/Navigation/ApplicationNavBar.vue"
+import Button from '../Jetstream/Button.vue';
 export default {
-  components: { ApplicationHeader, ApplicationLogo, ApplicationName, ApplicationNavBar},
+  components: { ApplicationHeader, ApplicationLogo, ApplicationName, ApplicationNavBar, Button},
 };
 </script>
 

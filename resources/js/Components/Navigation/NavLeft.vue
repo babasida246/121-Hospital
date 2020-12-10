@@ -1,5 +1,5 @@
 <template>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse ms-1" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto flex-column">
       <li class="nav-item">
         <anchor-collapse CollapseTaget="collapse-gioithieu" InnerData="Giới thiệu"></anchor-collapse>
@@ -81,17 +81,15 @@
      <li class="nav-item">
        <anchor-collapse CollapseTaget="collapse-tintuc" InnerData="Tin tức"></anchor-collapse>
        <div class="collapse ml-6" id="collapse-tintuc">
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
-         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
+         <nav-link class="nav-link align-bottom" link="homepage">Tin hoạt động</nav-link>
+         <nav-link class="nav-link align-bottom" link="homepage">Thông tin y khoa</nav-link>
+         <nav-link class="nav-link align-bottom" link="homepage">Nghiên cứu khoa học</nav-link>
+         <nav-link class="nav-link align-bottom" link="homepage">Công tác Đảng - Công tác Chính trị</nav-link>
        </div>
      </li>
      <li class="nav-item">
-       <anchor-collapse CollapseTaget="collapse-gioithieu" InnerData="Đội ngũ bác sĩ"></anchor-collapse>
-       <div class="collapse ml-6" id="collapse-">
+       <anchor-collapse CollapseTaget="collapse-doingubacsi" InnerData="Đội ngũ bác sĩ"></anchor-collapse>
+       <div class="collapse ml-6" id="collapse-doingubacsi">
          <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
          <nav-link class="nav-link align-bottom"></nav-link>
          <nav-link class="nav-link align-bottom"></nav-link>
@@ -99,6 +97,20 @@
          <nav-link class="nav-link align-bottom"></nav-link>
          <nav-link class="nav-link align-bottom"></nav-link>
        </div>
+     </li>
+     <li class="nav-item">
+       <anchor-collapse CollapseTaget="collapse-lichcongtac" InnerData="Lịch công tác"></anchor-collapse>
+       <div class="collapse ml-6" id="collapse-lichcongtac">
+         <nav-link class="nav-link align-bottom" link="homepage"></nav-link>
+         <nav-link class="nav-link align-bottom"></nav-link>
+         <nav-link class="nav-link align-bottom"></nav-link>
+         <nav-link class="nav-link align-bottom"></nav-link>
+         <nav-link class="nav-link align-bottom"></nav-link>
+         <nav-link class="nav-link align-bottom"></nav-link>
+       </div>
+     </li>
+     <li>
+       <nav-link class="nav-link align-bottom"></nav-link>
      </li>
     </ul>
   </div>

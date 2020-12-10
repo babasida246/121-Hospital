@@ -1,7 +1,10 @@
   <template>
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg rounded mt-3">
+  <nav class="navbar navbar-expand-md navbar-dark shadow-lg rounded">
     <div class="container-fluid">
-      <a class="navbar-brand d-lg-none" href="#">Menu</a>
+      <a class="navbar-brand d-md-none" href="#">
+        <application-logo class="ms-2"></application-logo>
+        <application-name class="ps-2"></application-name>
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -20,8 +23,8 @@
 
 <script>
 import NavLeft from "./NavLeft.vue";
-import Logo from "../ApplicationLogo";
-import AppName from "../ApplicationName";
+import ApplicationLogo from "../ApplicationLogo.vue";
+import ApplicationName from "../ApplicationName.vue";
 
 export default {
   props:{
@@ -29,8 +32,8 @@ export default {
   },
   components: {
     NavLeft,
-    Logo,
-    AppName
+    ApplicationLogo,
+    ApplicationName
   },
   data() {
     return {
