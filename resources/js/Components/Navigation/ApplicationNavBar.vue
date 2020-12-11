@@ -1,6 +1,6 @@
   <template>
-  <nav class="navbar navbar-expand-md navbar-dark shadow-lg rounded">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-sm navbar-dark shadow-lg rounded army-color">
+    <div class="container-fluid justify-content-center">
       <a class="navbar-brand d-md-none" href="#">
         <application-logo class="ms-2"></application-logo>
         <application-name class="ps-2"></application-name>
@@ -14,7 +14,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+       Menu <span class="navbar-toggler-icon"></span>
       </button>
     </div>
     <nav-left></nav-left>

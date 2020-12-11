@@ -1,49 +1,15 @@
 <template>
-  <div class="full-height">
-    <header
-      class="navbar navbar-expand navbar-dark d-none d-md-block army-color m-1 shadow-lg rounded flex-column flex-md-row"
-    >
+  <div class="container-fluid">
+    <application-header class="d-none d-md-block"></application-header>
+    <application-nav-bar class="d-md-none"></application-nav-bar>
+    <div class="d-flex">
       <div class="container-fluid">
-          <a class="navbar-brand d-inline-block" href="#">
-            <application-logo class="ms-3"></application-logo
-            ><application-name class="ps-2"></application-name>
-          </a>          
-          <div class="navbar-nav-scroll ms-auto">
-            <ul class="navbar-nav bd-navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Hướng dẫn</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Liên hệ</a>
-              </li>      
-            </ul>
-          </div>
+        <page-content></page-content>
       </div>
-    </header>
-    <application-nav-bar class="d-md-none army-color"></application-nav-bar>
-    <div class="container-fluid full-height">
-      <div class="row flex-xl full-height">
-        <application-nav-bar class="col-md-4 col-lg-2 d-none d-md-block army-color mt-3"></application-nav-bar>
-        <div class="col-md-8 col-lg-10 nopadding">
-          <main class="shadow-lg ms-md-3 mt-md-1 rounded">
-            <div class="card rounded">
-              <div class="card-header rounded">Featured</div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-              </div>
-            </div>
-          </main>
-        </div>
+      <div>
+        <application-side-bar></application-side-bar>
       </div>
     </div>
-    <footer></footer>
   </div>
 </template>
 
@@ -51,18 +17,26 @@
 import ApplicationHeader from "../Components/ApplicationHeader.vue";
 import ApplicationLogo from "../Components/ApplicationLogo.vue";
 import ApplicationName from "../Components/ApplicationName.vue";
-import ApplicationNavBar from "../Components/Navigation/ApplicationNavBar.vue"
-import Button from '../Jetstream/Button.vue';
+import ApplicationNavBar from "../Components/Navigation/ApplicationNavBar.vue";
+import ApplicationSideBar from "../Components/Navigation/ApplicationSideBar.vue";
+import PageContent from "../Components/PageContent.vue";
+
 export default {
-  components: { ApplicationHeader, ApplicationLogo, ApplicationName, ApplicationNavBar, Button},
+  components: {
+    ApplicationHeader,
+    ApplicationLogo,
+    ApplicationName,
+    ApplicationNavBar,
+    ApplicationSideBar,
+    PageContent,
+  },
 };
 </script>
-
 <style>
 #app-name {
   font-weight: bold;
 }
-.nav-link{
+.nav-link {
   font-weight: 150;
 }
 </style>
