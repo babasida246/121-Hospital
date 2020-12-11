@@ -4,7 +4,7 @@
   >
     <div class="container-fluid">
       <a class="navbar-brand d-inline-block" href="#">
-        <application-logo class="ms-3"></application-logo
+        <application-logo></application-logo
         ><application-name class="ps-2"></application-name>
       </a>
       <div class="navbar-nav-scroll ms-auto">
@@ -28,7 +28,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-             Menu <span class="navbar-toggler-icon"></span>
+              Menu <span class="navbar-toggler-icon"></span>
             </a>
           </li>
         </ul>

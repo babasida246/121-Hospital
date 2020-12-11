@@ -6,8 +6,10 @@
     role="button"
     aria-expanded="false"
     :aria-controls="CollapseTaget"
-  >
-    {{ InnerData }} <font-awesome-icon :icon="['fas', 'caret-down']" />
+  > 
+    <font-awesome-icon :icon="['fas', IconName]" />
+    <span>{{ InnerData }}</span>
+    <font-awesome-icon :icon="['fas', 'caret-down']" />
   </a>
 </template>
 
@@ -16,7 +18,7 @@ export default {
   props: {
     CollapseTaget: String,
     InnerData: String,
-    Icon: Array,
+    IconName: String
   },
   computed: {},
 };

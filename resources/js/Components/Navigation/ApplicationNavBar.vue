@@ -1,39 +1,43 @@
   <template>
-  <nav class="navbar navbar-expand-sm navbar-dark shadow-lg rounded army-color">
-    <div class="container-fluid justify-content-center">
-      <a class="navbar-brand d-md-none" href="#">
-        <application-logo class="ms-2"></application-logo>
-        <application-name class="ps-2"></application-name>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg rounded army-color">
+    <div class="container-fluid">
+      <a class="navbar-brand d-inline-block" href="#">
+        <application-logo></application-logo
+        ><application-name class="ps-2"></application-name>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-       Menu <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="navbar-nav-scroll ms-auto">
+        <ul class="navbar-nav bd-navbar-nav">          
+          <li>
+            <a
+              class="nav-link"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <nav-left></nav-left>
+    <application-nav-bar-left></application-nav-bar-left>
   </nav>
 </template>
 
 <script>
-import NavLeft from "./NavLeft.vue";
 import ApplicationLogo from "../ApplicationLogo.vue";
 import ApplicationName from "../ApplicationName.vue";
+import ApplicationNavBarLeft from "./ApplicationNavBarLeft.vue";
 
 export default {
-  props:{
-    
-  },
+  props: {},
   components: {
-    NavLeft,
     ApplicationLogo,
-    ApplicationName
+    ApplicationName,
+    ApplicationNavBarLeft,
   },
   data() {
     return {
@@ -41,9 +45,7 @@ export default {
       app_name: process.env.MIX_APP_NAME,
     };
   },
-  computed:{
-    
-  }
+  computed: {},
 };
 </script>
 

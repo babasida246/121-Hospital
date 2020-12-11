@@ -7,7 +7,7 @@
         <page-content></page-content>
       </div>
       <div>
-        <application-side-bar></application-side-bar>
+        <application-side-bar class="d-none d-md-block"></application-side-bar>
       </div>
     </div>
   </div>

@@ -1,5 +1,11 @@
-<application-nav-bar class="col-md-4 col-lg-2 d-none d-md-block army-color mt-3"></application-nav-bar>
-
-<application-nav-bar class="d-md-none army-color"></application-nav-bar>
-
-<application-nav-bar class="d-md-none"></application-nav-bar>
+<a
+        class="nav-link"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+       <span class="navbar-toggler-icon"></span>
+      </a>

@@ -1,7 +1,7 @@
 <template>
   <div>
       <div class="card rounded">
-            <div class="card-header rounded">Featured</div>
+            <div class="card-header rounded"></div>
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">
