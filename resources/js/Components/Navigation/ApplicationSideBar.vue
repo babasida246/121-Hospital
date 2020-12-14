@@ -1,6 +1,6 @@
 <template>
-  <nav class="collapse navbar navbar-dark army-color shadow-lg rounded flex-column flex-md-row" id="navigation-sidebar">
-    <application-nav-bar-content></application-nav-bar-content>
+  <nav class="collapse navbar navbar-expand navbar-light shadow-lg rounded flex-column flex-md-row">
+    <application-nav-bar-content class="" id="navigation-sidebar"></application-nav-bar-content>
   </nav>
 </template>
 

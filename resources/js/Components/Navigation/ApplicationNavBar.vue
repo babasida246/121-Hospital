@@ -1,5 +1,5 @@
   <template>
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg rounded army-color">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-lg rounded army-color">
     <div class="container-fluid">
       <a class="navbar-brand d-inline-block" href="#">
         <application-logo></application-logo
@@ -12,8 +12,8 @@
               class="nav-link"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
+              data-bs-target="#navbar"
+              aria-controls="navbar"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -23,7 +23,7 @@
         </ul>
       </div>
     </div>
-    <application-nav-bar-left></application-nav-bar-left>
+    <application-nav-bar-left id="navbar"></application-nav-bar-left>
   </nav>
 </template>
 

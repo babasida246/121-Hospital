@@ -1,13 +1,14 @@
 <template>
   <header
-    class="navbar navbar-expand navbar-dark army-color mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
+    class="navbar navbar-expand navbar-light bg-light mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
   >
     <div class="container-fluid">
       <a class="navbar-brand d-inline-block" href="#">
         <application-logo></application-logo
         ><application-name class="ps-2"></application-name>
       </a>
-      <div class="navbar-nav-scroll ms-auto">
+      <marquee class="ms-4"><span style="color:red; font-weight:bold">THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span></marquee>
+      <div class="navbar-nav-scroll ms-auto" id="header-menu">
         <ul class="navbar-nav bd-navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" href="#">Trang chủ</a>
@@ -22,11 +23,12 @@
             <a
               class="nav-link"
               type="button"
+              role="button"
               data-bs-toggle="collapse"
               data-bs-target="#navigation-sidebar"
               aria-controls="navigation-sidebar"
               aria-expanded="false"
-              aria-label="Toggle navigation"
+              aria-label="Ẩn/hiện Menu"
             >
               Menu <span class="navbar-toggler-icon"></span>
             </a>
@@ -53,4 +55,7 @@ export default {
 </script>
 
 <style>
+#header-menu{
+  min-width: 340px;
+}
 </style>

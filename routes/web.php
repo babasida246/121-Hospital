@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomePageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,10 +22,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::get('/', function () {
+Route::get('/landingpage', function () {
     return Inertia\Inertia::render('LandingPage');
 })->name('landingpage');
 
-Route::get('/homepage', function () {
+/* Route::get('/', function () {
     return Inertia\Inertia::render('HomePage');
-})->name('homepage');
+})->name('homepage'); */
+
+Route::get('/', [HomePageController::class, 'show'])->name('homepage');
