@@ -1,8 +1,8 @@
 <template>
   <img
     :src="src"
-    width="30"
-    height="30"
+    width="80"
+    height="80"
     class="d-inline-block align-top"
     alt=""
     loading="lazy"

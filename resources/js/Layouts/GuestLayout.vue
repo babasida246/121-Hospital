@@ -1,18 +1,21 @@
 <template>
-  <div class="container-fluid">
-    <!-- Page Header -->
-    <application-header class="d-none d-md-block"></application-header>
-    <application-nav-bar class="d-md-none"></application-nav-bar>
-    <div class="d-flex">
+  <div class="container-fluid d-flex">
+    <!-- Page Sider Menu -->
+    <div class="" id="sidebar">
+      <application-side-bar
+        id="navigation-sidebar"
+        class="d-none d-md-block"
+      ></application-side-bar>
+    </div>
+    <div>
+      <!-- Page Header -->
+      <application-header class="d-none d-md-block"></application-header>
+      <application-nav-bar class="d-md-none"></application-nav-bar>
       <!-- Page Contents -->
       <div class="container-fluid">
         <main>
           <slot></slot>
         </main>
-      </div>
-      <!-- Page Sider Menu -->
-      <div>
-        <application-side-bar class="d-none d-md-block"></application-side-bar>
       </div>
       <!-- Page Footer -->
     </div>
@@ -44,5 +47,11 @@ export default {
 }
 .nav-link {
   font-weight: 150;
+}
+#navigation-sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+ /*  max-width: 450px; */
+  min-width: 250px;
+  height: 100%;
 }
 </style>

@@ -377,12 +377,7 @@
           class="nav-link align-bottom"
         ></application-nav-bar-link>
       </div>
-    </li>
-    <li>
-      <application-nav-bar-link
-        class="nav-link align-bottom"
-      ></application-nav-bar-link>
-    </li>
+    </li>    
   </ul>
 </template>
 

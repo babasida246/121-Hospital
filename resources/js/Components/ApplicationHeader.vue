@@ -1,12 +1,13 @@
 <template>
   <header
-    class="navbar navbar-expand navbar-light bg-light mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
+    class="navbar navbar-expand navbar-light bg-light ms-2 mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
   >
     <div class="container-fluid">
-      <a class="navbar-brand d-inline-block" href="#">
+      <!-- <a class="navbar-brand d-inline-block" href="#">
         <application-logo></application-logo
-        ><application-name class="ps-2"></application-name>
-      </a>
+        >
+        <application-name class="ps-2"></application-name>
+      </a> -->
       <marquee class="ms-4"><span style="color:red; font-weight:bold">THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span></marquee>
       <div class="navbar-nav-scroll ms-auto" id="header-menu">
         <ul class="navbar-nav bd-navbar-nav">
@@ -19,20 +20,20 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Liên hệ</a>
           </li>
-          <li>
+          <!-- <li>
             <a
               class="nav-link"
               type="button"
               role="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navigation-sidebar"
-              aria-controls="navigation-sidebar"
-              aria-expanded="false"
+              data-bs-target="#sidebar"
+              aria-controls="sidebar"
+              aria-expanded="true"
               aria-label="Ẩn/hiện Menu"
             >
               Menu <span class="navbar-toggler-icon"></span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -56,6 +57,6 @@ export default {
 
 <style>
 #header-menu{
-  min-width: 340px;
+  min-width: 280px;
 }
 </style>
