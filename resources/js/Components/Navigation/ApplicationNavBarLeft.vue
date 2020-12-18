@@ -1,5 +1,5 @@
 <template>
-  <div class="collapse navbar-collapse ms-1" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse ms-1">
     <application-nav-bar-content></application-nav-bar-content>
   </div>
 </template>

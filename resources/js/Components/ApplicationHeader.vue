@@ -1,14 +1,31 @@
 <template>
   <header
-    class="navbar navbar-expand navbar-light bg-light ms-2 mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
+    class="navbar navbar-expand navbar-light bg-light mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
   >
     <div class="container-fluid">
-      <!-- <a class="navbar-brand d-inline-block" href="#">
-        <application-logo></application-logo
-        >
+      <a class="navbar-brand d-inline-block" href="#">
+        <!-- <application-logo></application-logo
+        > -->
         <application-name class="ps-2"></application-name>
-      </a> -->
-      <marquee class="ms-4"><span style="color:red; font-weight:bold">THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span></marquee>
+        <button
+          class="nav-link"
+          type="button"
+          role="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sidebar"
+          aria-controls="sidebar"
+          aria-expanded="true"
+          aria-label="Ẩn/hiện Menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </a>
+
+      <marquee class="ms-4"
+        ><span style="color: red; font-weight: bold"
+          >THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span
+        ></marquee
+      >
       <div class="navbar-nav-scroll ms-auto" id="header-menu">
         <ul class="navbar-nav bd-navbar-nav">
           <li class="nav-item">
@@ -20,7 +37,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Liên hệ</a>
           </li>
-          <!-- <li>
+          <li>
             <a
               class="nav-link"
               type="button"
@@ -33,7 +50,7 @@
             >
               Menu <span class="navbar-toggler-icon"></span>
             </a>
-          </li> -->
+          </li>
         </ul>
       </div>
     </div>
@@ -43,11 +60,13 @@
 <script>
 import ApplicationLogo from "../Components/ApplicationLogo.vue";
 import ApplicationName from "../Components/ApplicationName.vue";
+import Button from '../Jetstream/Button.vue';
 
 export default {
   components: {
     ApplicationLogo,
     ApplicationName,
+    Button,
   },
   data() {
     return {};
@@ -56,7 +75,7 @@ export default {
 </script>
 
 <style>
-#header-menu{
-  min-width: 280px;
+#header-menu {
+  min-width: 360px;
 }
 </style>

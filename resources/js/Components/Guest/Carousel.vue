@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-1 rounded-1 d-none d-md-block">
+  <div class="mt-1 rounded-1">
     <b-carousel
       id="carousel-1"
       :interval="5000"

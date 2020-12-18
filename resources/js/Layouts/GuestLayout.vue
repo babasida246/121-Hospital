@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid d-flex">
+  <div class="container-fluid main d-flex">
     <!-- Page Sider Menu -->
-    <div class="" id="sidebar">
+    <div class="collapse show" id="sidebar">
       <application-side-bar
         id="navigation-sidebar"
         class="d-none d-md-block"
@@ -12,7 +12,7 @@
       <application-header class="d-none d-md-block"></application-header>
       <application-nav-bar class="d-md-none"></application-nav-bar>
       <!-- Page Contents -->
-      <div class="container-fluid">
+      <div class="container-fluid main">
         <main>
           <slot></slot>
         </main>
@@ -48,10 +48,18 @@ export default {
 .nav-link {
   font-weight: 150;
 }
+#sidebar{
+  left:-450px;
+  transition: left cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+#sidebar .show{
+  left:0px;
+}
 #navigation-sidebar {
   /* don't forget to add all the previously mentioned styles here too */
  /*  max-width: 450px; */
   min-width: 250px;
   height: 100%;
 }
+
 </style>

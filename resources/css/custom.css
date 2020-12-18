@@ -12,3 +12,9 @@ html, body {
 .card{
   margin-top: 20px;
 }
+.main{
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
