@@ -1,24 +1,12 @@
 <template>
   <header
-    class="navbar navbar-expand navbar-light bg-light mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
+    class="navbar navbar-expand navbar-light bg-light ms-2 me-2 mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
   >
     <div class="container-fluid">
       <a class="navbar-brand d-inline-block" href="#">
         <!-- <application-logo></application-logo
         > -->
-        <application-name class="ps-2"></application-name>
-        <button
-          class="nav-link"
-          type="button"
-          role="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#sidebar"
-          aria-controls="sidebar"
-          aria-expanded="true"
-          aria-label="Ẩn/hiện Menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <application-name class="ps-2"></application-name>        
       </a>
 
       <marquee class="ms-4"

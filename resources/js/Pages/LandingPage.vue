@@ -1,6 +1,6 @@
 <template>
   <guest-layout>
-    {{test}}
+    
   </guest-layout>
 </template>
 
