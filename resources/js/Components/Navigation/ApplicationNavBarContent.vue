@@ -29,6 +29,11 @@
           >Danh sách Anh hùng Lực lượng vũ trang nhân
           dân</application-nav-bar-link
         >
+        <application-nav-bar-link
+          class="nav-link align-bottom"
+          link="homepage"
+          >Thư viện hình ảnh</application-nav-bar-link
+        >
       </div>
     </li>
     <li class="nav-item">

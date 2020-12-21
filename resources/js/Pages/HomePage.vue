@@ -1,6 +1,6 @@
 <template>
   <guest-layout>
-    <carousel :imagelist="CarouselImages"></carousel>
+
     <div class="">
       <section class="mt-3">
         <div class="justify-content-center">

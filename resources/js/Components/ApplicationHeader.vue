@@ -1,16 +1,16 @@
 <template>
   <header
-    class="navbar navbar-expand navbar-light bg-light ms-2 me-2 mb-1 shadow-lg rounded flex-column flex-md-row sticky-top"
+    class="navbar navbar-expand navbar-dark bg-color ms-2 me-2 shadow-lg rounded flex-column flex-md-row sticky-top"
   >
     <div class="container-fluid">
       <a class="navbar-brand d-inline-block" href="#">
         <!-- <application-logo></application-logo
         > -->
-        <application-name class="ps-2"></application-name>        
+        <!-- <application-name class="ps-2" style="color:#ffe67c;font-weight:Bold"></application-name>    -->     
       </a>
 
       <marquee class="ms-4"
-        ><span style="color: red; font-weight: bold"
+        ><span style="color: #ffe67c; font-weight: bold"
           >THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span
         ></marquee
       >
@@ -33,7 +33,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#sidebar"
               aria-controls="sidebar"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-label="Ẩn/hiện Menu"
             >
               Menu <span class="navbar-toggler-icon"></span>
@@ -65,5 +65,8 @@ export default {
 <style>
 #header-menu {
   min-width: 360px;
+}
+.bg-color{
+  background-color: #295f2d;
 }
 </style>

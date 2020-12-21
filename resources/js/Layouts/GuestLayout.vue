@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid main d-flex">
+  <div class="container-fluid main full-height d-flex">
     <!-- Page Sider Menu -->
     <div class="collapse show" id="sidebar">
       <application-side-bar
@@ -48,18 +48,17 @@ export default {
 .nav-link {
   font-weight: 150;
 }
-#sidebar{
-  left:-450px;
+#sidebar {
+  left: -450px;
   transition: left cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
-#sidebar .show{
-  left:0px;
+#sidebar .show {
+  left: 0px;
 }
 #navigation-sidebar {
   /* don't forget to add all the previously mentioned styles here too */
- /*  max-width: 450px; */
+  /*  max-width: 450px; */
   min-width: 250px;
   height: 100%;
 }
-
 </style>
