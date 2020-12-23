@@ -243,9 +243,9 @@
 </template>
 
 <script>
-import ApplicationModal from "../Components/ApplicationModal.vue";
-import Carousel from "../Components/Guest/Carousel.vue";
-import PageContent from "../Components/PageContent.vue";
+import ApplicationModal from "@/Components/Guest/ApplicationModal.vue";
+import Carousel from "@/Components/Guest/Carousel.vue";
+import PageContent from "@/Components/Guest/PageContent.vue";
 import GuestLayout from "../Layouts/GuestLayout.vue";
 
 export default {

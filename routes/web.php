@@ -20,17 +20,20 @@ use App\Http\Controllers\HomePageController;
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard'); */
-
-Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-    Route::domain('noibo.localhost')->group(function () {
-        Route::get('/dashboard', function () {
-            return Inertia\Inertia::render('Dashboard');
-        })->name('dashboard');
-        Route::get('/landingpage', function () {
-            return Inertia\Inertia::render('LandingPage');
-        })->name('landingpage');
+Route::domain('admin.localhost')->group(function () {
+    Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+        Route::get('/', function () {
+            return Inertia\Inertia::render('Admin/Admin');
+        })->name('adminpage');
     });
 });
+
+Route::domain('noibo.localhost')->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+});
+
 
 /* Route::get('/', function () {
     return Inertia\Inertia::render('HomePage');

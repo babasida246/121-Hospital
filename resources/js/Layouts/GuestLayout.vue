@@ -4,7 +4,7 @@
     <div class="collapse show" id="sidebar">
       <application-side-bar
         id="navigation-sidebar"
-        class="d-none d-md-block"
+        class="d-none d-md-block  "
       ></application-side-bar>
     </div>
     <div>
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import ApplicationHeader from "../Components/ApplicationHeader.vue";
-import ApplicationLogo from "../Components/ApplicationLogo.vue";
-import ApplicationName from "../Components/ApplicationName.vue";
-import ApplicationNavBar from "../Components/Navigation/ApplicationNavBar.vue";
-import ApplicationSideBar from "../Components/Navigation/ApplicationSideBar.vue";
-import PageContent from "../Components/PageContent.vue";
+import ApplicationHeader from "@/Components/Guest/ApplicationHeader.vue";
+import ApplicationLogo from "@/Components/ApplicationLogo.vue";
+import ApplicationName from "@/Components/ApplicationName.vue";
+import ApplicationNavBar from "@/Components/Guest/Navigation/ApplicationNavBar.vue";
+import ApplicationSideBar from "@/Components/Guest/Navigation/ApplicationSideBar.vue";
+import PageContent from "@/Components/Guest/PageContent.vue";
 
 export default {
   components: {
