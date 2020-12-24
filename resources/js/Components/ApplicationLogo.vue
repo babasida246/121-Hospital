@@ -1,6 +1,6 @@
 <template>
   <img
-    :src="src"
+    src="/images/app/logo.svg"
     :width="width"
     :height="height"
     class="d-inline-block align-top"
@@ -14,7 +14,7 @@ export default {
   props:['width','height'],
   data(){
     return{
-      src: process.env.MIX_APP_LOGO,
+      
     }
   }
 };

@@ -14,7 +14,8 @@ class CreateNavigationsTable extends Migration
     public function up()
     {
         Schema::create('navigations', function (Blueprint $table) {
-            $table->uuid('id');
+            $table->smallInteger('order');
+            $table->uuid('id')->primary();;
             $table->string('title');            
             $table->uuid('parent_id');
             $table->string('route_name');

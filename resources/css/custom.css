@@ -21,3 +21,6 @@ html, body {
 .bg-color{
   background-color: #295f2d;
 } 
+.nav-link:hover{
+  background-color:#426645;
+}

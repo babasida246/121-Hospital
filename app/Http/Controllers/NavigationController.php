@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\navigation;
+use Inertia\Inertia;
+use App\Models\Navigation;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class NavigationController extends Controller
@@ -22,9 +24,17 @@ class NavigationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         //
+        $uuid = Str::uuid();
+        $numberid = Navigation::where('id',$uuid)->get()->count();
+        
+        $nav_item = new Navigation;
+        return Inertia::render('Admin/Navigation/Manage', [
+            'event' => $numberid,
+        ]);
+
     }
 
     /**
@@ -35,7 +45,7 @@ class NavigationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //        
     }
 
     /**

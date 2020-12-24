@@ -1,0 +1,89 @@
+{
+    "1": {
+        "id": "a1",
+        "target": "a2",
+        "innerhtml": "Giới thiệu",
+        "link": "",
+        "icon": "info-circle",
+        "deep": 1,
+        "submenu": {
+            "1": {
+                "id": "a3",
+                "target": "a3",
+                "innerhtml": "Giới thiệu",
+                "link": "",
+                "icon": "info-circle",
+                "deep": 1,
+                "submenu": {
+                    "1": {
+                        "id": "a4",
+                        "target": "a4",
+                        "innerhtml": "Giới thiệu",
+                        "link": "homepage",
+                        "icon": "info-circle",
+                        "deep": 0,  
+                        "submenu": {}
+                    }
+                }
+            }
+        }
+    },
+    "2": {
+        "id": "b1",
+        "target": "a2",
+        "innerhtml": "Giới thiệu",
+        "link": "",
+        "icon": "info-circle",
+        "deep": 1,
+        "submenu": {
+            "1": {
+                "id": "a1",
+                "target": "a2",
+                "innerhtml": "Giới thiệu",
+                "link": "",
+                "icon": "info-circle",
+                "deep": 1,
+                "submenu": {
+                    "1": {
+                        "id": "a1",
+                        "target": "a2",
+                        "innerhtml": "Giới thiệu",
+                        "link": "",
+                        "icon": "info-circle",
+                        "deep": 1,
+                        "submenu": {}
+                    }
+                }
+            }
+        }
+    },
+    "3": {
+        "id": "a1",
+        "target": "a2",
+        "innerhtml": "Giới thiệu",
+        "link": "",
+        "icon": "info-circle",
+        "deep": 1,
+        "submenu": {
+            "1": {
+                "id": "a1",
+                "target": "a2",
+                "innerhtml": "Giới thiệu",
+                "link": "",
+                "icon": "info-circle",
+                "deep": "1",
+                "submenu": {
+                    "1": {
+                        "id": "a1",
+                        "target": "a2",
+                        "innerhtml": "Giới thiệu",
+                        "link": "",
+                        "icon": "info-circle",
+                        "deep": "1",
+                        "submenu": {}
+                    }
+                }
+            }
+        }
+    }
+}

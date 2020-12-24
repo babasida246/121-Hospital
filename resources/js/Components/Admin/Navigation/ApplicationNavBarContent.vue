@@ -3,22 +3,31 @@
     <li class="nav-item">
         <application-nav-bar-link
           class="nav-link align-bottom"
-          link="homepage"
+          link="adminpage"
+          iconname="home"
           >Dashboard</application-nav-bar-link
         >     
-    </li>
-    
+    </li>    
+    <li class="nav-item">
+        <application-nav-bar-link
+          class="nav-link align-bottom"
+          link="NavManage"
+          iconname="home"
+          >Menu</application-nav-bar-link
+        >     
+    </li>    
   </ul>
 </template>
 
 <script>
 import AnchorCollapse from "../AnchorCollapse";
-import ApplicationNavBarLink from "@/Components/ApplicationNavBarLink.vue";
+import ApplicationNavBarLink from "@/Components/ApplicationLink.vue";
 
 export default {
   components: { AnchorCollapse,ApplicationNavBarLink },
 };
 </script>
 
-<style>
+<style>   
+
 </style>

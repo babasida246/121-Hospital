@@ -9,7 +9,6 @@
     </div>
     <div>
       <!-- Page Header -->
-      <application-header class="d-none d-md-block"></application-header>
       <application-nav-bar class="d-md-none"></application-nav-bar>
       <!-- Page Contents -->
       <div class="container-fluid main">

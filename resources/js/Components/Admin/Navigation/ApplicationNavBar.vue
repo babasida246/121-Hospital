@@ -1,5 +1,5 @@
   <template>
-  <nav class="navbar navbar-expand-lg navbar-light shadow-lg rounded army-color">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-color shadow-lg rounded army-color">
     <div class="container-fluid">
       <a class="navbar-brand d-inline-block" href="#">
         <!-- <application-logo></application-logo>
