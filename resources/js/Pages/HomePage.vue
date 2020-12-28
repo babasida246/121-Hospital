@@ -1,8 +1,155 @@
 <template>
   <guest-layout>
-
     <div class="">
-      <section class="mt-3">
+      <section class="d-none d-lg-block" id="bhyt">
+        <h1 class="service-header">
+          <font-awesome-icon :icon="['fas', 'heartbeat']" />
+          Khám chữa bệnh BHYT
+        </h1>
+        <div class="d-flex">
+          <div class="dangky">
+            <form action="|" class="me-3 border p-2">
+              <h4>Đăng ký trực tuyến</h4>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3"
+                  >Số điện thoại</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="basic-url"
+                  aria-describedby="basic-addon3"
+                  maxlength="10"
+                  @keypress="isNumber($event)"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3"
+                  >Họ và tên</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="basic-url"
+                  aria-describedby="basic-addon3"
+                />
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#kcbBHYT"
+              >
+                Đăng ký khám
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary ms-1"
+                data-bs-toggle="modal"
+                data-bs-target="#banggiaBHYT"
+              >
+                Bảng giá dịch vụ
+              </button>
+              <application-modal
+                modalID="kcbBHYT"
+                modalTitle="Đăng ký khám chữa bệnh"
+                savebutton="false"
+              ></application-modal>
+              <application-modal
+                modalID="banggiaBHYT"
+                modalTitle="Bảng giá dịch vụ BHYT"
+                savebutton="false"
+              ></application-modal>
+            </form>
+          </div>
+          <div class="info">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              commodi blanditiis atque doloremque illo hic, optio, pariatur
+              itaque excepturi unde mollitia dolorem. Doloremque, sapiente
+              architecto! Adipisci commodi ex animi est.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              commodi blanditiis atque doloremque illo hic, optio, pariatur
+              itaque excepturi unde mollitia dolorem. Doloremque, sapiente
+              architecto! Adipisci commodi ex animi est.
+            </p>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              commodi blanditiis atque doloremque illo hic, optio, pariatur
+              itaque excepturi unde mollitia dolorem. Doloremque, sapiente
+              architecto! Adipisci commodi ex animi est.
+            </p>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              commodi blanditiis atque doloremque illo hic, optio, pariatur
+              itaque excepturi unde mollitia dolorem. Doloremque, sapiente
+              architecto! Adipisci commodi ex animi est.
+            </p>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              commodi blanditiis atque doloremque illo hic, optio, pariatur
+              itaque excepturi unde mollitia dolorem. Doloremque, sapiente
+              architecto! Adipisci commodi ex animi est.
+            </p>
+            <p class="d-none d-md-block">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              commodi blanditiis atque doloremque illo hic, optio, pariatur
+              itaque excepturi unde mollitia dolorem. Doloremque, sapiente
+              architecto! Adipisci commodi ex animi est.
+            </p>
+          </div>
+        </div>
+
+        <!-- <div class="d-flex justify-content-end">
+          <div class="info-area me-2">
+            <div class="card">
+              <div class="card-header text-center">
+                <h5 class="service-header">
+                  <font-awesome-icon :icon="['fas', 'heartbeat']" /> <br />
+                  Khám chữa bệnh Bảo hiểm y tế
+                </h5>
+              </div>
+              <div class="card-body">
+                <p>
+                  Hướng dẫn khám chữa bệnh, các vấn đề liên quan bảo hiểm y tế
+                </p>
+                <div class="d-flex justify-content-center" style="bottom: 0">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#kcbBHYT"
+                  >
+                    Đăng ký khám chữa bệnh
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary ms-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#banggiaBHYT"
+                  >
+                    Bảng giá dịch vụ
+                  </button>
+                  <application-modal
+                    modalID="kcbBHYT"
+                    modalTitle="Đăng ký khám chữa bệnh"
+                    savebutton="false"
+                  ></application-modal>
+                  <application-modal
+                    modalID="banggiaBHYT"
+                    modalTitle="Bảng giá dịch vụ BHYT"
+                    savebutton="false"
+                  ></application-modal>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <section class="mt-3 d-lg-none">
         <div class="justify-content-center">
           <h1 class="text-center" style="color: green">CÁC DỊCH VỤ</h1>
           <div class="container-fluid">
@@ -20,7 +167,10 @@
                       Hướng dẫn khám chữa bệnh, các vấn đề liên quan bảo hiểm y
                       tế
                     </p>
-                    <div class="d-flex justify-content-center" style="bottom: 0;">
+                    <div
+                      class="d-flex justify-content-center"
+                      style="bottom: 0"
+                    >
                       <button
                         type="button"
                         class="btn btn-success"
@@ -162,12 +312,12 @@
                         data-bs-target="#chuandoan"
                       >
                         Xem thông tin
-                      </button>                      
+                      </button>
                       <application-modal
                         modalID="chuandoan"
                         modalTitle="Kỹ thuật chuẩn đoán chức năng và hình ảnh"
                         savebutton="false"
-                      ></application-modal>                      
+                      ></application-modal>
                     </div>
                   </div>
                 </div>
@@ -194,7 +344,7 @@
                         data-bs-target="#phauthuat"
                       >
                         Xem thông tin
-                      </button>                    
+                      </button>
                       <application-modal
                         modalID="phauthuat"
                         modalTitle="Phẫu thuật-kỹ thuật cao"
@@ -214,7 +364,7 @@
                   </div>
                   <div class="card-body">
                     <p>Các kỹ thuật xét nghiệm đang triển khai tại Bệnh viện</p>
-                    <br>
+                    <br />
                     <div class="d-flex justify-content-center">
                       <button
                         type="button"
@@ -223,7 +373,7 @@
                         data-bs-target="#xetnghiem"
                       >
                         Xem thông tin
-                      </button>                 
+                      </button>
                       <application-modal
                         modalID="xetnghiem"
                         modalTitle="Các kỹ thuật xét nghiệm"
@@ -238,7 +388,6 @@
         </div>
       </section>
     </div>
-    
   </guest-layout>
 </template>
 
@@ -252,7 +401,26 @@ export default {
   props: ["CarouselImages"],
   components: { GuestLayout, PageContent, Carousel, ApplicationModal },
   data() {
-    return {};
+    return {
+      message: {
+        numberonly: "Chỉ được nhập số!",
+      },
+    };
+  },
+  methods: {
+    isNumber: function (evt) {
+      evt = evt ? evt : window.event;
+      var charCode = evt.which ? evt.which : evt.keyCode;
+      if (
+        charCode > 31 &&
+        (charCode < 48 || charCode > 57) &&
+        charCode !== 46
+      ) {
+        evt.preventDefault();
+      } else {
+        return true;
+      }
+    },
   },
   computed: {},
 };
@@ -261,5 +429,24 @@ export default {
 <style>
 .service-header {
   color: green;
+  margin-left: 34%;
+}
+#bhyt {
+  background-image: url("/images/homepage/BHYT.jpg");
+  background-size: cover;
+  height: 730px;
+}
+#bhyt .info-area {
+  height: 250px;
+}
+#bhyt .info {
+  width: 45%;
+  text-align: justify;
+}
+#bhyt .dangky {
+  width: 30%;
+  margin-left: 30%;
+  text-align: center;
+  height: 350px;
 }
 </style>

@@ -1,16 +1,17 @@
 <template>
   <header
-    class="navbar navbar-expand navbar-dark bg-color ms-2 me-2 shadow-lg rounded flex-column flex-md-row sticky-top"
+    class="navbar navbar-expand app-header navbar-light bg-color shadow-lg rounded flex-column flex-md-row sticky-top"
   >
     <div class="container-fluid">
+       <application-logo width="50" height="50"></application-logo
+        >
       <a class="navbar-brand d-inline-block" href="#">
-        <!-- <application-logo></application-logo
-        > -->
-        <!-- <application-name class="ps-2" style="color:#ffe67c;font-weight:Bold"></application-name>    -->     
+       
+        <application-name class="ps-2" style="color:#ffe67c;font-weight:Bold"></application-name>        
       </a>
 
       <marquee class="ms-4"
-        ><span style="color: #ffe67c; font-weight: bold"
+        ><span style="color: green; font-weight: bold"  
           >THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span
         ></marquee
       >

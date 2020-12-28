@@ -19,7 +19,9 @@ html, body {
   margin-left:auto
 }
 .bg-color{
-  background-color: #295f2d;
+  /* background-color: #295f2d; */
+  background-color: rgba(192,192,192,0.3);
+  
 } 
 .nav-link:hover{
   background-color:#426645;

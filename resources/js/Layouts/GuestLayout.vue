@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid main full-height d-flex">
     <!-- Page Sider Menu -->
-    <div class="collapse show" id="sidebar">
+    <div class="collapse" id="sidebar">
       <application-side-bar
         id="navigation-sidebar"
         class="d-none d-md-block  "
