@@ -1,20 +1,20 @@
 <template>
   <header
-    class="navbar navbar-expand app-header navbar-light bg-color shadow-lg rounded flex-column flex-md-row sticky-top"
+    class="navbar navbar-expand app-header navbar-light bg-color shadow-lg flex-column flex-md-row sticky-top"
   >
     <div class="container-fluid">
-       <application-logo width="50" height="50"></application-logo
+      <!--  <application-logo width="50" height="50"></application-logo
         >
       <a class="navbar-brand d-inline-block" href="#">
        
-        <application-name class="ps-2" style="color:#ffe67c;font-weight:Bold"></application-name>        
-      </a>
+        <application-name class="ps-2 app-name"></application-name>        
+      </a> -->
 
       <marquee class="ms-4"
-        ><span style="color: green; font-weight: bold"  
+        ><span style="color: green; font-weight: bold"
           >THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span
-        ></marquee
-      >
+        >
+        </marquee>
       <div class="navbar-nav-scroll ms-auto" id="header-menu">
         <ul class="navbar-nav bd-navbar-nav">
           <li class="nav-item">
@@ -49,7 +49,7 @@
 <script>
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import ApplicationName from "@/Components/ApplicationName.vue";
-import Button from '@/Jetstream/Button.vue';
+import Button from "@/Jetstream/Button.vue";
 
 export default {
   components: {
@@ -66,8 +66,5 @@ export default {
 <style>
 #header-menu {
   min-width: 360px;
-}
-.bg-color{
-  background-color: #295f2d;
 }
 </style>

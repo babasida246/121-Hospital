@@ -2,7 +2,7 @@
   <ul class="collapse ms-3" :id="id">
     <li v-for="MenuItem of menulist" :key="MenuItem.id">
       <application-link
-        v-if="MenuItem.deep == 0"
+        v-if="!MenuItem.submenu"
         class="nav-link align-bottom"
         :link="MenuItem.link"
         :iconname="MenuItem.icon"
@@ -17,7 +17,7 @@
         :IconName="MenuItem.icon"
       ></anchor-collapse>
       <sub-item
-        v-if="MenuItem.deep > 0"
+        v-if="MenuItem.submenu"
         :id="MenuItem.target"
         :menulist="MenuItem.submenu"
       ></sub-item>
