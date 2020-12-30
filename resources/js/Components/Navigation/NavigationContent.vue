@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import SubItem from "./SubItem.vue";
+import SubItem from "./NavigationSubItem.vue";
 import ApplicationLink from "@/Components/ApplicationLink.vue";
 import AnchorCollapse from "@/Components/AnchorCollapse.vue";
 import customFunction from "@/custom.js"
@@ -36,7 +36,7 @@ export default {
   props: ["MenuStructure"],
   data() {
     return {
-      menulist: JSON.parse(customFunction.menuModifier(this.MenuStructure)) ,
+      menulist: customFunction.menuModifier(this.MenuStructure),
     };
   },
   computed: {

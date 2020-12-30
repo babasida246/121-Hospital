@@ -11,7 +11,7 @@
     <div>
       <!-- Page Header -->
       <application-header class="d-none d-md-block"></application-header>
-      <application-nav-bar class="d-md-none"></application-nav-bar>
+      <navigation-top-bar class="d-md-none" :MenuStructure="menulist"></navigation-top-bar>
       <!-- Page Contents -->
       <div class="container-fluid main">
         <main>
@@ -24,22 +24,20 @@
 </template>
 
 <script>
-import Menu from "@/Components/Admin/Navigation/navigation.json";
+import Menu from "@/Components/Guest/navigation.json";
 import ApplicationHeader from "@/Components/Guest/ApplicationHeader.vue";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import ApplicationName from "@/Components/ApplicationName.vue";
-import ApplicationNavBar from "@/Components/Guest/Navigation/ApplicationNavBar.vue";
-import PageContent from "@/Components/Guest/PageContent.vue";
-import NavigationSideBar from '../Components/Navigation/NavigationSideBar.vue';
+import NavigationSideBar from "@/Components/Navigation/NavigationSideBar.vue";
+import NavigationTopBar from "@/Components/Navigation/NavigationTopBar.vue";
 
 export default {
   components: {
     ApplicationHeader,
     ApplicationLogo,
     ApplicationName,
-    ApplicationNavBar,
-    PageContent,
     NavigationSideBar,
+    NavigationTopBar,
   },
   data() {
     return {

@@ -64,7 +64,4 @@ export default {
 #header-menu {
   min-width: 360px;
 }
-.bg-color{
-  background-color: #295f2d;
-}
 </style>

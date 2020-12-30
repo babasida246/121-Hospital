@@ -23,19 +23,17 @@
 </template>
 
 <script>
-import Menu from "@/Components/Guest/Navigation/navigation.json";
+import Menu from "@/Components/Admin/navigation.json";
 import ApplicationHeader from "@/Components/Admin/ApplicationHeader.vue";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import ApplicationName from "@/Components/ApplicationName.vue";
-import ApplicationNavBar from "@/Components/Admin/Navigation/ApplicationNavBar.vue";
-import NavigationSideBar from "../Components/Navigation/NavigationSideBar.vue";
+import NavigationSideBar from "@/Components/Navigation/NavigationSideBar.vue";
 
 export default {
   components: {
     ApplicationHeader,
     ApplicationLogo,
     ApplicationName,
-    ApplicationNavBar,
     NavigationSideBar,
   },
   data() {

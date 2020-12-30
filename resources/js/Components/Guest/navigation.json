@@ -1,0 +1,115 @@
+{
+    "gioithieu": {
+        "innerhtml": "Giới thiệu",
+        "icon": "info-circle",
+        "submenu": {
+            "thanhtich": { "innerhtml": "Thành tích đạt được", "link": "homepage" },
+            "chucnang": { "innerhtml": "Chức năng nhiệm vụ", "link": "homepage" },
+            "lichsu": { "innerhtml": "Lịch sử hình thành", "link": "homepage" },
+            "ahllvt": {
+                "innerhtml": "Danh sách Anh hùng lực lượng vũ trang nhân dân",
+                "link": "homepage"
+            }
+        }
+    },
+    "cocau": {
+        "innerhtml": "Cơ cấu tổ chức",
+        "icon": "sitemap",
+        "submenu": {
+            "bangiamdoc": { "innerhtml": "Ban giám đốc", "link": "homepage" },
+            "coquan": {
+                "innerhtml": "Khối cơ quan",
+                "submenu": {
+                    "khtt": { "innerhtml": "Kế hoạch tổng hợp", "link": "homepage" },
+                    "chinhtri": { "innerhtml": "Chính trị", "link": "homepage" },
+                    "haucan": { "innerhtml": "Hậu cần", "link": "homepage" },
+                    "dieuduong": { "innerhtml": "Điều dưỡng", "link": "homepage" },
+                    "hanhchinh": { "innerhtml": "Hành chính", "link": "homepage" },
+                    "taichinh": { "innerhtml": "Tài chinh", "link": "homepage" },
+                    "khoahuanluyen": { "innerhtml": "Khoa huấn luyện", "link": "homepage" }
+                }
+            },
+            "khoinoi": {
+                "innerhtml": "Khối nội",
+                "submenu": {
+                    "a1": { "innerhtml": "Nội tim mạch (A1)", "link": "homepage" },
+                    "a2": { "innerhtml": "Nội tiêu hóa (A2)", "link": "homepage" },
+                    "a3": { "innerhtml": "Thận nhân tạo (A3)", "link": "homepage" },
+                    "a4": { "innerhtml": "Truyền nhiễm - Da liễu (A4)", "link": "homepage" },
+                    "a5": { "innerhtml": "Nội Cán bộ (A5)", "link": "homepage" },
+                    "a6": { "innerhtml": "Nội thần kinh - Đột quỵ (A6)", "link": "homepage" },
+                    "a7": { "innerhtml": "Y học cổ truyền (A7)", "link": "homepage" }
+                }
+            },
+            "khoingoai": {
+                "innerhtml": "Khối ngoại",
+                "submenu": {
+                    "b1": { "innerhtml": "Chấn thương chỉnh hình (B1)", "link": "homepage" },
+                    "b2": { "innerhtml": "Ngoại tổng quát - Lồng ngực (B2)", "link": "homepage" },
+                    "b3": { "innerhtml": "Ngoại tiết niệu (B3)", "link": "homepage" },
+                    "b4": {
+                        "innerhtml": "Hồi sức tích cực - Gây mê phẫu thuật (A8-B4)",
+                        "link": "homepage"
+                    },
+                    "b5": { "innerhtml": "Phụ sản (B5)", "link": "homepage" },
+                    "b6": { "innerhtml": "Ngoại thần kinh (B6)", "link": "homepage" },
+                    "b7": { "innerhtml": "Khoa mắt (B7)", "link": "homepage" },
+                    "b8": { "innerhtml": "Răng - Hàm - Mặt (B8)", "link": "homepage" },
+                    "b9": { "innerhtml": "Tai - Mũi - Họng (B9)", "link": "homepage" }
+                }
+            },
+            "canlamsang":{
+                "innerhtml":"Cận lâm sàng",
+                "submenu":{
+                    "c1":{"innerhtml":"Khoa khám bệnh (C1)","link":"homepage"},
+                    "c2":{"innerhtml":"Cấp cứu ban đầu (C2)","link":"homepage"},
+                    "c3":{"innerhtml":"Xét nghiệm (C3)","link":"homepage"},
+                    "c4":{"innerhtml":"Giải phẩu bệnh (C4)","link":"homepage"},
+                    "c5":{"innerhtml":"Chuẩn đoán chức năng (C5)","link":"homepage"},
+                    "c6":{"innerhtml":"Chuẩn đoán hình ảnh (C6)","link":"homepage"},
+                    "c7":{"innerhtml":"Khoa dược (C7)","link":"homepage"},
+                    "c8":{"innerhtml":"Nhà thuốc (C8)","link":"homepage"},
+                    "c9":{"innerhtml":"Trang bị (C9)","link":"homepage"},
+                    "c10":{"innerhtml":"Dinh dưỡng (C10)","link":"homepage"},
+                    "c11":{"innerhtml":"Kiểm soát nhiễm khuẩn (C11)","link":"homepage"}
+                }
+            }
+        }
+    },
+    "linhvuc":{
+        "innerhtml":"Lĩnh vực hoạt động",
+        "icon":"stethoscope",
+        "submenu":{
+            "bhyt":{"innerhtml":"Khám chữa bệnh bảo hiểm y tế","link":"homepage"},
+            "kcbtyc":{"innerhtml":"Khám chữa bệnh theo yêu cầu","link":"homepage"},
+            "ksk":{"innerhtml":"Khám sức khỏe","link":"homepage"},
+            "xetnghiem":{"innerhtml":"Kỹ thuật xét nghiệm","link":"homepage"},
+            "chuandoanhinhanh":{"innerhtml":"Chuẩn đoán hình ảnh","link":"homepage"},
+            "Phauthuat":{"innerhtml":"Phẫu thuật kỹ thuật cao","link":"homepage"}
+        }
+    },
+    "news":{
+        "innerhtml":"Tin tức",
+        "icon":"newspaper",
+        "submenu":{
+            "tinhoatdong":{"innerhtml":"Tin hoạt động","link":"homepage"},
+            "ttykhoa":{"innerhtml":"Thông tin y khoa","link":"homepage"},
+            "nckh":{"innerhtml":"Nghiên cứu khoa học","link":"homepage"},
+            "dangchinhtri":{"innerhtml":"Công tác Đảng - Chính trị","link":"homepage"}
+        }
+    },
+    "doingubs":{
+        "innerhtml":"Đội ngũ bác sĩ",
+        "icon":"user-md",
+        "submenu":{
+           
+        }
+    },
+    "lichcongtac":{
+        "innerhtml":"Lịch công tác",
+        "icon":"calendar-alt",
+        "submenu":{
+            
+        }
+    }
+}

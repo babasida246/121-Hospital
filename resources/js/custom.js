@@ -13,7 +13,7 @@ function menuModifier(menu) {
         /* menu[ParentItem]['id'] = makeid(5) */
         let submenu_created = create_submenu(menu[ParentItem])
         menu[ParentItem] = submenu_created
-    } 
+    }
     function create_submenu(ParentItem) {
         if (ParentItem['submenu']) {
             for (let SubMenuItem in ParentItem['submenu']) {
@@ -24,7 +24,7 @@ function menuModifier(menu) {
         }
         return ParentItem
     }
-    return JSON.stringify(menu)
+    return menu
 }
 
-export default {randomString, menuModifier}
+export default { randomString, menuModifier }

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="collapse navbar navbar-expand navbar-light bg-color shadow-lg flex-column flex-md-row"
+    class="collapse navbar navbar-expand navbar-light bg-color flex-column flex-md-row"
   >
     <div class="d-flex justify-content-center" style="border-bottom:2px solid green">
       <a class="navbar-brand text-center" href="#">
