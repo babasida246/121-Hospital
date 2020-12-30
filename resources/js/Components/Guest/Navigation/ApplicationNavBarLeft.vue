@@ -1,17 +1,23 @@
 <template>
   <div class="collapse navbar-collapse ms-1">
-    <application-nav-bar-content></application-nav-bar-content>
+    <navigation-content :MenuStructure='menulist'></navigation-content>
   </div>
 </template>
 
 <script>
-import ApplicationNavBarContent from "./ApplicationNavBarContent.vue";
+import Menu from './navigation.json';
+import NavigationContent from '../../Navigation/NavigationContent.vue';
 
 export default {
   props: {},
   components: {
-    ApplicationNavBarContent,
+    NavigationContent,
   },
+   data(){
+    return{
+      menulist: Menu
+    }
+  }
 };
 </script>
 

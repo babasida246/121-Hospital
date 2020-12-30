@@ -11,23 +11,29 @@
       </a>      
     </div>
     
-    <div class="overflow-auto">
-      <application-nav-bar-content class=""></application-nav-bar-content>
+    <div class="overflow-auto"> 
+      <navigation-content :MenuStructure='menulist'></navigation-content>
     </div>
   </nav>  
 </template>
 
 <script>
-import ApplicationNavBarContent from "./ApplicationNavBarContent.vue";
+import Menu from './navigation.json';
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import ApplicationName from "@/Components/ApplicationName.vue";
+import NavigationContent from '@/Components/Navigation/NavigationContent.vue';
 export default {
   props: {},
   components: {
-    ApplicationNavBarContent,
     ApplicationLogo,
     ApplicationName,
+    NavigationContent,
   },
+   data(){
+    return{
+      menulist: Menu
+    }
+  }
 };
 </script>
 

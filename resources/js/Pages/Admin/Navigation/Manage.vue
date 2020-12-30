@@ -9,13 +9,12 @@
       <input id="email" v-model="form.email" />
       <button type="submit">Submit</button>
     </form>
-    <nav-content></nav-content>
   </admin-layout>
 </template>
 
 <script>
 import AdminLayout from "@/Layouts/AdminLayout.vue";
-import NavContent from "@/Components/Navigation/Content.vue"
+
 export default {
   components: { AdminLayout,NavContent },
   data() {

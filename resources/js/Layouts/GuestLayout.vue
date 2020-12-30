@@ -2,10 +2,11 @@
   <div class="container-fluid main full-height d-flex">
     <!-- Page Sider Menu -->
     <div class="collapse" id="sidebar">
-      <application-side-bar
+      <navigation-side-bar
         id="navigation-sidebar"
-        class="d-none d-md-block  "
-      ></application-side-bar>
+        class="d-none d-md-block"
+        :MenuStructure="menulist"
+      ></navigation-side-bar>
     </div>
     <div>
       <!-- Page Header -->
@@ -23,12 +24,13 @@
 </template>
 
 <script>
+import Menu from "@/Components/Admin/Navigation/navigation.json";
 import ApplicationHeader from "@/Components/Guest/ApplicationHeader.vue";
 import ApplicationLogo from "@/Components/ApplicationLogo.vue";
 import ApplicationName from "@/Components/ApplicationName.vue";
 import ApplicationNavBar from "@/Components/Guest/Navigation/ApplicationNavBar.vue";
-import ApplicationSideBar from "@/Components/Guest/Navigation/ApplicationSideBar.vue";
 import PageContent from "@/Components/Guest/PageContent.vue";
+import NavigationSideBar from '../Components/Navigation/NavigationSideBar.vue';
 
 export default {
   components: {
@@ -36,8 +38,13 @@ export default {
     ApplicationLogo,
     ApplicationName,
     ApplicationNavBar,
-    ApplicationSideBar,
     PageContent,
+    NavigationSideBar,
+  },
+  data() {
+    return {
+      menulist: Menu,
+    };
   },
 };
 </script>

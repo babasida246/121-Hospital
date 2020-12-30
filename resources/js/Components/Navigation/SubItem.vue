@@ -1,11 +1,11 @@
 <template>
-  <ul class="collapse ms-3" :id="id">
+  <ul class="collapse ms-1" :id="id">
     <li v-for="MenuItem of menulist" :key="MenuItem.id">
       <application-link
         v-if="!MenuItem.submenu"
         class="nav-link align-bottom"
         :link="MenuItem.link"
-        :iconname="MenuItem.icon"
+        :IconName="MenuItem.icon"
       >
         {{ MenuItem.innerhtml }}
       </application-link>
@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import AnchorCollapse from "../Admin/AnchorCollapse.vue";
-import ApplicationLink from "../ApplicationLink.vue";
+import AnchorCollapse from "@/Components/AnchorCollapse.vue";
+import ApplicationLink from "@/Components/ApplicationLink.vue";
 export default {
   name: "sub-item",
   components: { ApplicationLink, AnchorCollapse },
