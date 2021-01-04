@@ -9,8 +9,10 @@ html, body {
   padding: 0 !important;
   margin: 0 !important;
 }
-.card{
-  margin-top: 20px;
+.app-name{
+  /* color:#ffe67c; */
+  color:#ff0000;
+  font-weight:Bold;
 }
 .main{
   padding-right:0;
@@ -26,9 +28,11 @@ html, body {
 .nav-link:hover{
   background-color:rgba(238, 238, 238, 0.5);
 }
-
 .app-name{
   /* color:#ffe67c; */
   color:#ff0000;
   font-weight:Bold;
+}
+.card{
+  margin-top: 20px;
 }

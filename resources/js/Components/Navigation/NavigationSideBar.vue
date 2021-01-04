@@ -2,14 +2,14 @@
   <nav
     class="collapse navbar navbar-expand navbar-light bg-color flex-column flex-md-row"
   >
-    <div class="d-flex justify-content-center" style="border-bottom:2px solid green">
+   <!--  <div class="d-flex justify-content-center" style="border-bottom:2px solid green">
       <a class="navbar-brand text-center" href="#">
         <application-logo width="80" height="80"></application-logo>
         <br>
         <application-name class="ps-2 app-name"></application-name>
-        <!-- <application-name class="ps-2" style="color:#ffe67c; font-weight:bold"></application-name> -->
+        <application-name class="ps-2" style="color:#ffe67c; font-weight:bold"></application-name>
       </a>      
-    </div>
+    </div> -->
     
     <div class="overflow-auto"> 
       <navigation-content :MenuStructure='menulist'></navigation-content>

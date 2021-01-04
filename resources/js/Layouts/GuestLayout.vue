@@ -1,25 +1,28 @@
 <template>
-  <div class="container-fluid main full-height d-flex">
-    <!-- Page Sider Menu -->
-    <div class="collapse" id="sidebar">
-      <navigation-side-bar
-        id="navigation-sidebar"
-        class="d-none d-md-block"
-        :MenuStructure="menulist"
-      ></navigation-side-bar>
-    </div>
+  <div class="main container-fluid full-height">
+    <!-- Page Header -->
+    <application-header class="d-none d-md-block"></application-header>
+    <navigation-top-bar
+      class="d-md-none"
+      :MenuStructure="menulist"
+    ></navigation-top-bar>
     <div>
-      <!-- Page Header -->
-      <application-header class="d-none d-md-block"></application-header>
-      <navigation-top-bar class="d-md-none" :MenuStructure="menulist"></navigation-top-bar>
       <!-- Page Contents -->
-      <div class="container-fluid main">
-        <main>
+      <div class="main container-fluid d-flex">
+        <main class="main container-fluid">
           <slot></slot>
         </main>
+        <div class="collapse" id="sidebar">
+          <navigation-side-bar
+            id="navigation-sidebar"
+            class="d-none d-md-block"
+            :MenuStructure="menulist"
+          ></navigation-side-bar>
+        </div>
       </div>
       <!-- Page Footer -->
     </div>
+    <!-- Page Sider Menu -->
   </div>
 </template>
 

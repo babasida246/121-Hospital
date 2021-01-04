@@ -14,10 +14,10 @@ class CreateNavigationsTable extends Migration
     public function up()
     {
         Schema::create('navigations', function (Blueprint $table) {
-            $table->smallInteger('order');
-            $table->uuid('id')->primary();;
-            $table->string('title');            
-            $table->uuid('parent_id');
+            $table->uuid('id')->primary();
+            $table->uuid('parent_id')->nullable();
+            $table->string('innerhtml');
+            $table->string('iconname');
             $table->string('route_name');
             $table->timestamps();
         });

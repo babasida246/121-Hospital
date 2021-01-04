@@ -15,18 +15,36 @@
           >THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span
         >
         </marquee> -->
-      <div class="navbar-nav-scroll" id="header-menu">
+      <div class="navbar-nav-scroll ms-auto me-auto" id="header-menu">
         <ul class="navbar-nav bd-navbar-nav">
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link active" href="#">Trang chủ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Hướng dẫn</a>
+            <a class="nav-link" href="#">Giới thiệu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Liên hệ</a>
-          </li> -->
-          <li>
+            <a class="nav-link" href="#">Khám chữa bệnh</a>
+          </li>
+          <li class="nav-item">
+            <div class="d-flex justify-content-center">
+              <a class="navbar-brand text-center" href="#">
+                <application-logo width="80" height="80"></application-logo>
+                <br />
+                <application-name class="ps-2 app-name"></application-name>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tin tức</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Đội ngũ chuyên môn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Thông báo</a>
+          </li>         
+          <!--  <li>
             <a
               class="nav-link"
               type="button"
@@ -39,7 +57,7 @@
             >
               Menu <span class="navbar-toggler-icon"></span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -66,5 +84,12 @@ export default {
 <style>
 #header-menu {
   min-width: 360px;
+}
+ul.navbar-nav {
+  display: table;
+}
+li.nav-item {
+  display: table-cell;
+  vertical-align: middle;
 }
 </style>
