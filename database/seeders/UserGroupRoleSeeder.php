@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class AdminRoleSeeder extends Seeder
+class UserGroupRoleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,5 @@ class AdminRoleSeeder extends Seeder
     public function run()
     {
         //
-
     }
 }

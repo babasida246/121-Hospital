@@ -19,8 +19,8 @@ class CreatePageContentsTable extends Migration
             $table->string('content');
             $table->string('content_type');
             $table->string('location');
-            $table->text('image_list_id');
-            $table->text('attach_list_id');
+            $table->text('image_list');
+            $table->text('attach_list');
             $table->timestamps();
         });
     }

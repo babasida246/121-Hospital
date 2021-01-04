@@ -17,7 +17,7 @@ class CreateNavigationsTable extends Migration
             $table->uuid('id')->primary();
             $table->uuid('parent_id')->nullable();
             $table->string('innerhtml');
-            $table->string('iconname');
+            $table->string('icon');
             $table->string('route_name');
             $table->timestamps();
         });

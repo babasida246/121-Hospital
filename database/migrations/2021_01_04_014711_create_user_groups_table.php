@@ -19,8 +19,7 @@ class CreateUserGroupsTable extends Migration
             $table->string('name');
             $table->text('code');
             $table->text('description');            
-            $table->timestamps();
-            $table->foreign('role_id')->references('id')->on('user_roles')->onUpdate('cascade')->onDelete('cascade');
+            $table->timestamps();            
         });
     }
 
