@@ -1,67 +1,47 @@
 <template>
-  <nav
-    class="navbar navbar-expand app-header navbar-light bg-color flex-column flex-md-row"
-  >
-    <div class="container-fluid">
-      <!--  <application-logo width="50" height="50"></application-logo
-        >
-      <a class="navbar-brand d-inline-block" href="#">
-       
-        <application-name class="ps-2 app-name"></application-name>        
-      </a> -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
-      <!-- <marquee class="ms-4"
-        ><span style="color: green; font-weight: bold"
-          >THÂN THIỆN - TẬN TÂM - TRUNG THỰC - TÔN TRỌNG</span
-        >
-        </marquee> -->
-      <div class="navbar-nav-scroll ms-auto me-auto" id="header-menu">
-        <ul class="navbar-nav bd-navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Trang chủ</a>
+      <h1 class="logo me-auto d-none d-md-block"><a href="index.html"><application-name class="ps-2"></application-name></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+       <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#departments">Departments</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Giới thiệu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Khám chữa bệnh</a>
-          </li>
-          <li class="nav-item">
-            <div class="d-flex justify-content-center">
-              <a class="navbar-brand text-center" href="#">
-                <application-logo width="80" height="80"></application-logo>
-                <br />
-                <application-name class="ps-2 app-name"></application-name>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tin tức</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Đội ngũ chuyên môn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Thông báo</a>
-          </li>         
-          <!--  <li>
-            <a
-              class="nav-link"
-              type="button"
-              role="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#sidebar"
-              aria-controls="sidebar"
-              aria-expanded="false"
-              aria-label="Ẩn/hiện Menu"
-            >
-              Menu <span class="navbar-toggler-icon"></span>
-            </a>
-          </li> -->
+          <li><a href="#contact">Contact</a></li>
+
         </ul>
-      </div>
+      </nav><!-- .nav-menu -->
+      <a href="#appointment" class="appointment-btn scrollto">Make an Appointment</a>
+      <nav class="mobile-nav d-lg-none">
+        
+      </nav>
     </div>
-  </nav>
+  </header><!-- End Header -->
+
 </template>
 
 <script>
@@ -82,14 +62,4 @@ export default {
 </script>
 
 <style>
-#header-menu {
-  min-width: 360px;
-}
-ul.navbar-nav {
-  display: table;
-}
-li.nav-item {
-  display: table-cell;
-  vertical-align: middle;
-}
 </style>

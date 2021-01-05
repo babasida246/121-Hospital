@@ -4,8 +4,7 @@
   >
     <div class="container-fluid">
       <a class="navbar-brand d-inline-block" href="#">
-        <!-- <application-logo></application-logo
-        > -->
+        <!-- <application-logo></application-logo> -->
         <!-- <application-name class="ps-2" style="color:#ffe67c;font-weight:Bold"></application-name>    -->     
       </a>
 
