@@ -9,12 +9,12 @@
 
        <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#departments">Departments</a></li>
-          <li><a href="#doctors">Doctors</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
+          <li class="active"><a href="index.html">Trang chủ</a></li>
+          <li><a href="#about">Hướng dẫn</a></li>
+          <li><a href="#services">Dịch vụ</a></li>
+          <li><a href="#departments">Chuyên khoa</a></li>
+          <li><a href="#doctors">Bác sĩ</a></li>
+          <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -30,8 +30,8 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          </li> -->
+          <li><a href="#contact">Liên hệ</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -57,7 +57,7 @@ export default {
   },
   data() {
     return {};
-  },
+  },  
 };
 </script>
 

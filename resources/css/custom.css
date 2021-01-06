@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: rgba(255,255,255,0.7);
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -216,13 +216,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
-  padding: 5px 2px;
-  border-bottom: 2px solid #fff;
+  padding: 5px 2px;  
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #1977cc;
-  border-color: #1977cc;
+  border-bottom: 2px solid #1977cc;
 }
 
 .nav-menu .drop-down ul {
@@ -264,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down > a:after {
-  content: "\ea99";
+  content: "⏷";
   font-family: IcoFont;
   padding-left: 5px;
 }
@@ -285,8 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down .drop-down > a:after {
-  content: "\eaa0";
-  font-family: IcoFont;
+  content: "⏵";
   position: absolute;
   right: 15px;
 }
@@ -299,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -100%;
   }
   .nav-menu .drop-down .drop-down > a:after {
-    content: "\ea9d";
+    content: "⏴";
   }
 }
 
@@ -385,15 +383,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav .drop-down > a:after {
-  content: "\ea99";
-  font-family: IcoFont;
+  content: "⏷";  
   padding-left: 10px;
   position: absolute;
   right: 15px;
 }
 
 .mobile-nav .active.drop-down > a:after {
-  content: "\eaa1";
+  content: "⏶";
 }
 
 .mobile-nav .drop-down > a {
