@@ -3,6 +3,7 @@ require('bootstrap');
 require('moment');
 
 import Vue from 'vue';
+import Vuesax from 'vuesax'
 
 import { InertiaApp } from '@inertiajs/inertia-vue';
 import { InertiaForm } from 'laravel-jetstream';
@@ -22,6 +23,8 @@ library.add(fab, fas, far)
 
 // Install BootstrapVue
 Vue.use(BootstrapVue)
+// Install VueSax
+Vue.use(Vuesax)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
