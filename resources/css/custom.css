@@ -877,8 +877,7 @@ section {
   position: absolute;
   top: -25px;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
+  transform: translateX(-50%);  
   background: #1977cc;
   padding: 12px;
   color: #fff;

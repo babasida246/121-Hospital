@@ -13,7 +13,6 @@
         "@fortawesome/free-brands-svg-icons": "^5.15.1",
         "@fortawesome/free-regular-svg-icons": "^5.15.1",
         "@fortawesome/free-solid-svg-icons": "^5.15.1",
-        "@fortawesome/vue-fontawesome": "^2.0.2",
         "@inertiajs/inertia": "^0.8.2",
         "@inertiajs/inertia-vue": "^0.5.4",
         "@popperjs/core": "^2.6.0",
@@ -37,6 +36,7 @@
         "vue": "^2.6.12",
         "vue-loader": "^15.9.6",
         "vue-template-compiler": "^2.6.12",
+        "vue2-smooth-scroll": "^1.5.0",
         "vuesax": "^3.12.2"
     },
     "dependencies": {}

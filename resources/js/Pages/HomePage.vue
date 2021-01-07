@@ -135,12 +135,12 @@
       <!-- End About Section -->
 
       <!-- ======= Counts Section ======= -->
-      <section id="counts" class="counts">
+      <!-- <section id="counts" class="counts">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6">
               <div class="count-box">
-                <i class="icofont-doctor-alt"></i>
+                <i><vs-icon icon="fa-user-md" icon-pack="fas" size="25px"></vs-icon></i>
                 <span data-toggle="counter-up">85</span>
                 <p>Nhân viên y tế</p>
               </div>
@@ -148,7 +148,7 @@
 
             <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
               <div class="count-box">
-                <i class="icofont-patient-bed"></i>
+                <i><vs-icon icon="fa-user-md" icon-pack="fas" size="25px"></vs-icon></i>
                 <span data-toggle="counter-up">18</span>
                 <p>Chuyên khoa</p>
               </div>
@@ -156,7 +156,7 @@
 
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
               <div class="count-box">
-                <i class="icofont-laboratory"></i>
+                <i><vs-icon icon="fa-user-md" icon-pack="fas" size="25px"></vs-icon></i>
                 <span data-toggle="counter-up">8</span>
                 <p>Chuẩn đoán kỹ thuật cao</p>
               </div>
@@ -164,14 +164,14 @@
 
             <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
               <div class="count-box">
-                <i class="icofont-award"></i>
+                <i><vs-icon icon="fa-user-md" icon-pack="fas" size="25px"></vs-icon></i>
                 <span data-toggle="counter-up">150</span>
                 <p>Thành tích - Phần thưởng</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Counts Section -->
 
       <!-- ======= Services Section ======= -->
@@ -190,7 +190,7 @@
           <div class="row">
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div class="icon-box">
-                <div class="icon"><i class="icofont-heart-beat"></i></div>
+                <div class="icon"><i><vs-icon icon="fa-heartbeat" icon-pack="fas" size="medium"></vs-icon></i></div>
                 <h4><a href="">Khám chữa bệnh bảo hiểm y tế</a></h4>
                 <p>
                   Voluptatum deleniti atque corrupti quos dolores et quas
@@ -203,7 +203,7 @@
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
             >
               <div class="icon-box">
-                <div class="icon"><i class="icofont-drug"></i></div>
+                <div class="icon"><i><vs-icon icon="fa-hand-holding-medical" icon-pack="fas" size="medium"></vs-icon></i></div>
                 <h4><a href="">Khám chữa bệnh theo yêu cầu</a></h4>
                 <p>
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -227,7 +227,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div class="icon-box">
-                <div class="icon"><i class="icofont-heartbeat"></i></div>
+                <div class="icon"><i><vs-icon icon="fa-biohazard" icon-pack="fas" size="medium"></vs-icon></i></div>
                 <h4><a href="">Xét nghiệm</a></h4>
                 <p>
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -238,7 +238,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div class="icon-box">
-                <div class="icon"><i class="icofont-disabled"></i></div>
+                <div class="icon"><i><vs-icon icon="fa-x-ray" icon-pack="fas" size="medium"></vs-icon></i></div>
                 <h4><a href="">Chuẩn đoán hình ảnh</a></h4>
                 <p>
                   Quis consequatur saepe eligendi voluptatem consequatur dolor
