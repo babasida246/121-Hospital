@@ -4,10 +4,10 @@
       <a class="navbar-brand d-inline-block" href="#">
         <!-- <application-logo></application-logo>
         <br> -->
-        <application-name
+        <name
           class="ps-2"
           style="color: red; font-weight: bold"
-        ></application-name>
+        ></name>
       </a>
       <div class="navbar-nav-scroll ms-auto">
         <ul class="navbar-nav bd-navbar-nav">
@@ -36,15 +36,15 @@
 </template>
 
 <script>
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import ApplicationName from "@/Components/ApplicationName.vue";
-import NavigationContent from "@/Components/Navigation/NavigationContent.vue";
+import Logo from "../Logo.vue";
+import Name from "../Name.vue";
+import NavigationContent from "./Content.vue";
 
 export default {
   props: ["MenuStructure"],
   components: {
-    ApplicationLogo,
-    ApplicationName,
+    Logo,
+    Name,
     NavigationContent,
   },
   data() {

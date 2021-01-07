@@ -435,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#intro {
   width: 100%;
   height: 90vh;
   background: url("/images//hero-bg.jpg") top center;
@@ -443,11 +443,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -200px;
 }
 
-#hero .container {
+#intro .container {
   position: relative;
 }
 
-#hero h1 {
+#intro h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
@@ -456,13 +456,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #2c4964;
 }
 
-#hero h2 {
+#intro h2 {
   color: #2c4964;
   margin: 10px 0 0 0;
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+#intro .btn-get-started {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -477,29 +477,29 @@ h1, h2, h3, h4, h5, h6 {
   background: #1977cc;
 }
 
-#hero .btn-get-started:hover {
+#intro .btn-get-started:hover {
   background: #3291e6;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #intro {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 992px) {
-  #hero {
+  #intro {
     margin-bottom: 0;
     height: 100vh;
   }
-  #hero .container {
+  #intro .container {
     padding-bottom: 63px;
   }
-  #hero h1 {
+  #intro h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
+  #intro h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -507,7 +507,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-height: 600px) {
-  #hero {
+  #intro {
     height: auto;
   }
 }

@@ -18,14 +18,14 @@
 </template>
 
 <script>
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import ApplicationName from "@/Components/ApplicationName.vue";
-import NavigationContent from '@/Components/Navigation/NavigationContent.vue';
+import Logo from "../Logo.vue";
+import Name from "../Name.vue";
+import NavigationContent from './Content.vue';
 export default {
   props: ['MenuStructure'],
   components: {
-    ApplicationLogo,
-    ApplicationName,
+    Logo,
+    Name,
     NavigationContent,
   },
    data(){

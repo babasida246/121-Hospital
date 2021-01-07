@@ -1,8 +1,7 @@
 <template>
-  <guest-layout>
-    <div class="" id="bhyt">
+  <guest-layout>    
       <!-- ======= Hero Section ======= -->
-      <section id="hero" class="d-flex align-items-center">
+      <section id="intro" class="d-flex align-items-center">
         <div class="container">
           <h1>Bệnh viện Quân y 121</h1>          
           <h2>TÔN TRỌNG - TẬN TÂM - TRUNG THỰC - THÂN THIỆN</h2>
@@ -1235,7 +1234,7 @@
         </div>
       </section>
       <!-- End Contact Section -->
-    </div>
+
   </guest-layout>
 </template>
 

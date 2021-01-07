@@ -20,18 +20,18 @@
 </template>
 
 <script>
-import Menu from "@/Components/Guest/navigation.json";
-import ApplicationHeader from "@/Components/Guest/ApplicationHeader.vue";
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import ApplicationName from "@/Components/ApplicationName.vue";
-import NavigationSideBar from "@/Components/Navigation/NavigationSideBar.vue";
-import NavigationTopBar from "@/Components/Navigation/NavigationTopBar.vue";
+import Menu from "../Components/Guest/navigation.json";
+import ApplicationHeader from "../Components/Guest/ApplicationHeader.vue";
+import Logo from "../Components/Logo.vue";
+import Name from "../Components/Name.vue";
+import NavigationSideBar from "../Components/Navigation/SideBar.vue";
+import NavigationTopBar from "../Components/Navigation/TopBar.vue";
 
 export default {
   components: {
     ApplicationHeader,
-    ApplicationLogo,
-    ApplicationName,
+    Logo,
+    Name,
     NavigationSideBar,
     NavigationTopBar,
   },

@@ -12,11 +12,12 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a :href="route('homepage')" v-smooth-scroll="{offset:-20}">Trang chủ</a></li>
-          <li><a href="#about" v-smooth-scroll="{offset:-20}">Hướng dẫn</a></li>
-          <li><a href="#services" v-smooth-scroll="{offset:-20}">Dịch vụ</a></li>
-          <li><a href="#departments" v-smooth-scroll="{offset:-20}">Chuyên khoa</a></li>
-          <li><a href="#doctors" v-smooth-scroll="{offset:-20}">Bác sĩ</a></li>
+          <link-of-list :link="route().current() == 'homepage' ? '#intro' : 'homepage'">{{route().current() == 'homepage' ? "Đầu trang" : "Trang chủ"}}</link-of-list>
+          <link-of-list link="#about">Hướng dẫn</link-of-list>
+          <link-of-list link="#services">Dịch vụ</link-of-list>
+          <link-of-list link="#departments">Chuyên khoa</link-of-list>
+          <link-of-list link="#doctors">Bác sĩ</link-of-list>
+          <link-of-list link="#contact">Liên hệ</link-of-list>          
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -33,8 +34,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li> -->
-          <li><a href="#contact" v-smooth-scroll="{offset:-20}">Liên hệ</a></li>      
+          </li> -->             
         </ul>
       </nav>
       <!-- .nav-menu -->
@@ -48,16 +48,15 @@
 </template>
 
 <script>
-import ApplicationLogo from "@/Components/ApplicationLogo.vue";
-import ApplicationName from "@/Components/ApplicationName.vue";
-import ZiggyAnchor from '@/Components/Navigation/ZiggyAnchor.vue';
+import Logo from "../Logo.vue";
+import ApplicationName from "../Name.vue";
+import LinkOfList from '../Navigation/LinkOfList.vue';
 
 export default {
   components: {
-    ApplicationLogo,
+    Logo,
     ApplicationName,
-    ZiggyAnchor,
-  
+    LinkOfList,  
   },
   data() {
     return {};
