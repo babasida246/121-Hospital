@@ -4,11 +4,11 @@ require('moment');
 
 /* Default dev-dependencies */
 import Vue from 'vue';
-import { InertiaApp } from '@inertiajs/inertia-vue';
+import { App, plugin } from '@inertiajs/inertia-vue';
 import { InertiaForm } from 'laravel-jetstream';
 import PortalVue from 'portal-vue';
 Vue.mixin({ methods: { route } });
-Vue.use(InertiaApp);
+Vue.use(plugin);
 Vue.use(InertiaForm);
 Vue.use(PortalVue);
 
@@ -42,7 +42,7 @@ const app = document.getElementById('app');
 
 new Vue({
     render: (h) =>
-        h(InertiaApp, {
+        h(App, {
             props: {
                 initialPage: JSON.parse(app.dataset.page),
                 resolveComponent: (name) => require(`./Pages/${name}`).default,

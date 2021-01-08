@@ -1,7 +1,7 @@
 <template>
-  <div class="main container-fluid full-height">    
+  <div class="main container-fluid full-height">
     <!-- Page Header -->
-    <application-header></application-header>
+    <app-header></app-header>
 
     <div>
       <!-- Page Contents -->
@@ -9,9 +9,7 @@
         <main class="main container-fluid">
           <slot></slot>
         </main>
-        <div class="collapse" id="sidebar">
-      
-        </div>
+        <div class="collapse" id="sidebar"></div>
       </div>
       <!-- Page Footer -->
     </div>
@@ -21,7 +19,7 @@
 
 <script>
 import Menu from "../Components/Guest/navigation.json";
-import ApplicationHeader from "../Components/Guest/ApplicationHeader.vue";
+import AppHeader from "../Components/Guest/Header.vue";
 import Logo from "../Components/Logo.vue";
 import Name from "../Components/Name.vue";
 import NavigationSideBar from "../Components/Navigation/SideBar.vue";
@@ -29,7 +27,7 @@ import NavigationTopBar from "../Components/Navigation/TopBar.vue";
 
 export default {
   components: {
-    ApplicationHeader,
+    AppHeader,
     Logo,
     Name,
     NavigationSideBar,
