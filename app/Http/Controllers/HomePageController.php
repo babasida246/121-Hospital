@@ -11,9 +11,12 @@ class HomePageController extends Controller
     //
     public function show()
     {
+        $Contents = [];
+        
         $CarouselDir = array_diff(scandir("./images/carousel"), array('.', '..'));
         return Inertia::render('HomePage', [
-            'CarouselImages' => $CarouselDir
+            'CarouselImages' => $CarouselDir,
+            'Contents' => $Contents,
         ]);
     }
 }

@@ -16,22 +16,6 @@ html, body {
   margin-right:auto;
   margin-left:auto
 }
-.bg-color{
-  /* background-color: #295f2d; */
-  background-color: rgba(255, 255, 255, 0.4);
-  
-} 
-.nav-link:hover{
-  background-color:rgba(238, 238, 238, 0.5);
-}
-.app-name{
-  /* color:#ffe67c; */
-  color:#ff0000;
-  font-weight:Bold;
-}
-.card{
-  margin-top: 20px;
-}
 
 /**
 * Template Name: Medilab - v3.0.0
@@ -356,8 +340,8 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   background: #fff;
   transition: ease-in-out 0.2s;
-  opacity: 0;
-  visibility: hidden;
+ /*  opacity: 0;
+  visibility: hidden; */
   border-radius: 10px;
   padding: 10px 0;
 }

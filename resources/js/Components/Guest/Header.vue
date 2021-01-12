@@ -12,12 +12,17 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <link-of-list :link="route().current() == 'homepage' ? '#intro' : 'homepage'">{{route().current() == 'homepage' ? "Đầu trang" : "Trang chủ"}}</link-of-list>
+          <link-of-list
+            :link="route().current() == 'homepage' ? '#intro' : 'homepage'"
+            >{{
+              route().current() == "homepage" ? "Đầu trang" : "Trang chủ"
+            }}</link-of-list
+          >
           <link-of-list link="#about">Hướng dẫn</link-of-list>
           <link-of-list link="#services">Dịch vụ</link-of-list>
           <link-of-list link="#departments">Chuyên khoa</link-of-list>
           <link-of-list link="#doctors">Bác sĩ</link-of-list>
-          <link-of-list link="#contact">Liên hệ</link-of-list>          
+          <link-of-list link="#contact">Liên hệ</link-of-list>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -34,15 +39,37 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li> -->             
+          </li> -->
         </ul>
       </nav>
       <!-- .nav-menu -->
       <a href="#appointment" class="appointment-btn scrollto"
         >Make an Appointment</a
       >
-      <nav class="mobile-nav d-lg-none"></nav>
-    </div>    
+      <button class="mobile-nav-toggle d-lg-none" @click="MenuToggle = !MenuToggle">
+        <i :class="MenuToggle? 'hidden':''">
+          <vs-icon icon="fa-bars" icon-pack="fas" size="medium"></vs-icon>
+        </i>
+        <i :class="MenuToggle? '':'hidden'">
+          <vs-icon icon="fa-times" icon-pack="fas" size="medium"></vs-icon>
+        </i>
+      </button>
+      <nav :class="MobileNav">
+        <ul>
+          <link-of-list
+            :link="route().current() == 'homepage' ? '#intro' : 'homepage'"
+            >{{
+              route().current() == "homepage" ? "Đầu trang" : "Trang chủ"
+            }}</link-of-list
+          >
+          <link-of-list link="#about">Hướng dẫn</link-of-list>
+          <link-of-list link="#services">Dịch vụ</link-of-list>
+          <link-of-list link="#departments">Chuyên khoa</link-of-list>
+          <link-of-list link="#doctors">Bác sĩ</link-of-list>
+          <link-of-list link="#contact">Liên hệ</link-of-list>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!-- End Header -->
 </template>
@@ -50,17 +77,27 @@
 <script>
 import Logo from "../Logo.vue";
 import ApplicationName from "../Name.vue";
-import LinkOfList from '../Navigation/LinkOfList.vue';
+import LinkOfList from "../Navigation/LinkOfList.vue";
 
 export default {
   components: {
     Logo,
     ApplicationName,
-    LinkOfList,  
+    LinkOfList,
   },
   data() {
-    return {};
-  },  
+    return {
+      MenuToggle: false,
+    };
+  },
+  methods: {},
+  computed: {
+    MobileNav() {
+      return this.MenuToggle
+        ? "mobile-nav d-lg-none"
+        : "mobile-nav d-lg-none hidden";
+    },
+  },
 };
 </script>
 

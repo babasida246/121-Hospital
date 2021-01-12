@@ -5,12 +5,14 @@ require('moment');
 /* Default dev-dependencies */
 import Vue from 'vue';
 import { App, plugin } from '@inertiajs/inertia-vue';
+import { InertiaProgress } from '@inertiajs/progress'
 import { InertiaForm } from 'laravel-jetstream';
 import PortalVue from 'portal-vue';
 Vue.mixin({ methods: { route } });
 Vue.use(plugin);
 Vue.use(InertiaForm);
 Vue.use(PortalVue);
+InertiaProgress.init()
 
 
 /* Font-Awesome */

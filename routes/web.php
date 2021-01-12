@@ -26,9 +26,9 @@ use App\Http\Controllers\NavigationController as ControllersNavigationController
 Route::domain('admin.localhost')->group(function () {
     //
     Route::middleware(['auth:sanctum', 'verified'])->group(function () {
-       //
+        //
         Route::get('/', function () {
-            return Inertia\Inertia::render('Admin/Admin');
+            return Inertia\Inertia::render('Admin');
         })->name('adminpage');    
         //
         Route::group(['prefix' => 'navigation'], function () {

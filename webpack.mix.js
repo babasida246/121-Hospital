@@ -16,4 +16,5 @@ mix.js('resources/js/app.js', 'public/js').vue()
         require('postcss-import'),
         require('tailwindcss')       
     ])
+    .sass('resources/css/custom.scss','public/css/app.css')
     .webpackConfig(require('./webpack.config'));

@@ -14,7 +14,7 @@ class CreateUserGroupRolesTable extends Migration
     public function up()
     {
         Schema::create('user_group_roles', function (Blueprint $table) {
-            $table->uuid('user_group_id');
+            $table->uuid('user_group_id')->primary();
             $table->uuid('user_role_id');
             $table->timestamps();
             $table->foreign('user_group_id')->references('id')->on('user_groups')->onUpdate('cascade')->onDelete('cascade');

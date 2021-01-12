@@ -402,7 +402,7 @@ import Testimonial from '../Components/Guest/Testimonial/Testimonial.vue';
 import GuestLayout from '../Layouts/GuestLayout.vue';
 
 export default {
-  props: ["CarouselImages"],
+  props: ["CarouselImages","Contents"],
   components: { GuestLayout, Doctor, Department, Gallery, FrequentlyAskedQuestions, Service, About, Testimonial},
   data() {
     return {
