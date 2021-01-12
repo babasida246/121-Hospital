@@ -1,13 +1,17 @@
 <template>
-  
+  <div>
+    <aside-bar></aside-bar>
+  </div>
 </template>
 
 <script>
-export default {
+import AsideBar from '../Components/Admin/AsideBar.vue';
 
-}
+export default {
+  components: {AsideBar  },
+};
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@import "../../scss/Admin/admin.scss";
 </style>

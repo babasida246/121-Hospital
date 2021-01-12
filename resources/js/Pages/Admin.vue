@@ -1,11 +1,13 @@
 <template>
-  <guest-layout></guest-layout>
+  <admin-layout>
+    
+  </admin-layout>
 </template>
 
 <script>
-import GuestLayout from '../Layouts/GuestLayout.vue'
+import AdminLayout from '../Layouts/AdminLayout.vue'
 export default {
-  components: { GuestLayout },
+  components: { AdminLayout },
 
 }
 </script>
