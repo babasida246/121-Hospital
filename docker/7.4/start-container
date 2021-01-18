@@ -9,8 +9,6 @@ if [ ! -d /.composer ]; then
 fi
 
 chmod -R ugo+rw /.composer
-#chmod 777 /var/www
-#chown WWWUSER:WWWUSER . /var/www
 
 if [ $# -gt 0 ];then
     exec gosu $WWWUSER "$@"
