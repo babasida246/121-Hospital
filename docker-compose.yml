@@ -1,38 +1,51 @@
 version: '3.4'
 
 services:
-  
-    #app:
-    #    build:
-    #        context: ./docker/
-    #        dockerfile: Dockerfile
-    #    image: app/laravel
-    #    restart: unless-stopped
-    #    volumes: 
-    #        - '.:/usr/share/html'
-    #    networks: 
-    #        - app_network
-    #    depends_on: 
-    #        - mysql
-
-    nginx:
-        image: nginx:latest
-        restart: unless-stopped
-        ports:
-            - '80:80'
-        container_name: nginx
+    app:
+        build:
+            context: ./Docker/
+            dockerfile: Dockerfile
+        image: app/laravel
+       #restart: unless-stopped
+        tty: true
         volumes: 
-            - '.:/usr/share/html'
-            - './docker/nginx/conf.d/app.conf:/etc/nginx/conf.d/default.conf'
+            - '.:/var/www/html'
+            - './Docker/nginx/laravel.conf:/etc/nginx/conf.d/default.conf'
+        #    - './Docker/php/phpfpm:/etc/php/8.0/fpm'
         networks: 
             - app_network
-        links: 
+        links:
             - php-fpm
+        ports:
+            - '80:80'
+            - '443:443'
         depends_on: 
-            - php-fpm
             - mysql
             - redis
-        #    - selenium      
+
+    #nginx:
+    #    build:
+    #        context: ./Docker/nginx/
+    #        dockerfile: Dockerfile
+    #    image: nginx:latest
+    #    tty: true
+    #    restart: unless-stopped
+    #    ports:
+    #        - '80:80'
+    #        - '443:443'
+    #    container_name: nginx
+    #    volumes: 
+    #        - '.:/usr/share/html'
+    #        - './Docker/nginx/laravel.conf:/etc/nginx/conf.d/default.conf'
+    #        - './Docker/Log/nginx_error.log:/var/log/nginx/error.log'
+    #    networks: 
+    #        - app_network  
+    #    depends_on: 
+    #        - php-fpm
+    #        - mysql
+    #        - redis
+    #        - selenium        
+
 
     php-fpm:
         image: php:8.0.1-fpm
@@ -41,7 +54,7 @@ services:
             - '9000:9000'
         container_name: phpfpm
         volumes: 
-            - '.:/var/www/html'
+            - '.:/usr/share/html'
         networks: 
             - app_network
 
@@ -65,8 +78,8 @@ services:
             MYSQL_USER: '${DB_USERNAME}'
             MYSQL_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-        volumes:
-            - './docker/mysql/lib:/var/lib/mysql'
+        #volumes:
+        #    - './Docker/mysql/lib:/var/lib/mysql'
         networks:
             - app_network
 
@@ -76,7 +89,7 @@ services:
         ports:
             - '${REDIS_PORT}:6379'
         volumes:
-            - './docker/redis:/data'
+            - './Docker/redis:/data'
         networks:
             - app_network
 

@@ -1,6 +1,8 @@
-FROM ubuntu:20.04
+FROM ubuntu:latest
 
-WORKDIR /usr/share/html
+LABEL maintainer="DMH"
+
+WORKDIR /var/www/html
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ=Asia/Ho_Chi_Minh
@@ -8,6 +10,7 @@ ENV TZ=Asia/Ho_Chi_Minh
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update \
+    && apt-get upgrade -y\
     && apt-get install -y gnupg gosu curl ca-certificates zip unzip git supervisor sqlite3 libcap2-bin apt-utils\
     && mkdir -p ~/.gnupg \
     && echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf \
@@ -22,8 +25,8 @@ RUN apt-get update \
        php8.0-xml php8.0-zip php8.0-bcmath php8.0-soap \
        php8.0-intl php8.0-readline \
        php8.0-msgpack php8.0-igbinary php8.0-ldap \
-       php8.0-redis \
-       php8.0-fpm \
+       php8.0-redis php8.0-fpm \    
+    && apt-get install -y nginx \   
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
     && curl -sL https://deb.nodesource.com/setup_15.x | bash - \
     && apt-get install -y nodejs \
@@ -31,3 +34,19 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.0
+
+RUN groupadd --force nginx
+RUN useradd -ms /bin/bash --no-user-group -g webserver -u nginx
+
+COPY start-container /usr/local/bin/start-container
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY php.ini /etc/php/8.0/cli/conf.d/99-sail.ini
+COPY start-container /usr/local/bin/start-container
+RUN chmod -R 755 /var/www/html
+RUN chmod +x /usr/local/bin/start-container
+
+EXPOSE 80
+EXPOSE 443
+
+#ENTRYPOINT ["start-container"]
