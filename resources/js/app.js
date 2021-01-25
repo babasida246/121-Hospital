@@ -4,6 +4,7 @@ require('moment');
 
 /* Default dev-dependencies */
 import Vue from 'vue';
+import VueLazyload from 'vue-lazyload'
 import { App, plugin } from '@inertiajs/inertia-vue';
 import { InertiaProgress } from '@inertiajs/progress'
 import { InertiaForm } from 'laravel-jetstream';
@@ -26,7 +27,14 @@ InertiaProgress.init({
     // Whether the NProgress spinner will be shown.
     showSpinner: false,
   })
-
+  
+// or with options
+Vue.use(VueLazyload, {
+    preLoad: 1.3,
+    error: 'dist/error.png',
+    loading: 'dist/loading.gif',
+    attempt: 1
+  })
 
 /* Font-Awesome */
 import '@fortawesome/fontawesome-free';

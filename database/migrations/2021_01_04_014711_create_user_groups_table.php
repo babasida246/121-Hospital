@@ -29,11 +29,7 @@ class CreateUserGroupsTable extends Migration
      * @return void
      */
     public function down()
-    {
-        Schema::table('user_groups', function (Blueprint $table) {
-            $table->dropForeign(['role_id']);
-        });
-        Schema::dropIfExists('user_groups');
-        
+    {       
+        Schema::dropIfExists('user_groups');        
     }
 }

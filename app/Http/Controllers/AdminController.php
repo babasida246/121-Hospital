@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Inertia\Inertia;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 
@@ -47,6 +48,8 @@ class AdminController extends Controller
     public function show(Admin $admin)
     {
         //
+        return Inertia::render('AdminPage');
+
     }
 
     /**

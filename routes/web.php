@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomePageController;
 use App\Htpp\Controllers\NavigationController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\NavigationController as ControllersNavigationController;
 
 /*
@@ -23,13 +24,12 @@ use App\Http\Controllers\NavigationController as ControllersNavigationController
 /* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard'); */
-Route::domain('admin.localhost')->group(function () {
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     //
-    Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::prefix('admin')->group(function () {
         //
-        Route::get('/', function () {
-            return Inertia\Inertia::render('Admin');
-        })->name('adminpage');    
+        Route::get('/', [AdminController::class, 'show'])->name('admin');   
         //
         Route::group(['prefix' => 'navigation'], function () {
             //
@@ -39,14 +39,14 @@ Route::domain('admin.localhost')->group(function () {
             //
             Route::post('/create',[ControllersNavigationController::class,'create'])->name('createNav');
         });
-    });
+    }); 
 });
 
-Route::domain('noibo.localhost')->group(function () {
+/* Route::prefix('noibo')->group(function () {
     Route::get('/', function () {
         return view('welcome');
     });
-});
+}); */
 
 
 /* Route::get('/', function () {
