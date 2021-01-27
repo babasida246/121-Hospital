@@ -12,7 +12,7 @@ class ClearAll extends Command
      *
      * @var string
      */
-    protected $signature = 'clear:all';
+    protected $signature = 'clear';
 
     /**
      * The console command description.
@@ -43,7 +43,6 @@ class ClearAll extends Command
         Artisan::call('queue:clear');
         Artisan::call('optimize:clear');
         Artisan::call('event:clear');
-        Artisan::call('view:clear');
-        return 0;
+        Artisan::call('view:clear');        
     }
 }

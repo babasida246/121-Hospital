@@ -2,18 +2,29 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Laravel\Jetstream\HasTeams;
+use Laravel\Sanctum\HasApiTokens;
+use Laravel\Jetstream\HasProfilePhoto;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Fortify\TwoFactorAuthenticatable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Admin extends Model
+class Admin extends Authenticatable
 {
+    use HasApiTokens;
     use HasFactory;
+    use HasProfilePhoto;
+    use HasTeams;
+    use Notifiable;
+    use TwoFactorAuthenticatable;
 
     protected $table = 'admins';
 
     //Primary key setup
     public $incrementing = false;
+
     protected $keyType = 'string';
 
     public function role_id()
@@ -48,8 +59,43 @@ class Admin extends Model
         'is_superuser',
         'role_id'
     ];
+    
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
     protected $appends = [
         'profile_photo_url',
-    ];
+    ];    
+    
+    public static function boot()
+    {
+        parent::boot();
+        self::creating(function ($model) {
+            $model->id = Str::Uuid();
+        });
+    }
+
+    public function getIncrementing()
+    {
+        return false;
+    }
+
+    public function getKeyType()
+    {
+        return 'string';
+    }
+
+    
 }

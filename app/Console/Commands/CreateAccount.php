@@ -11,14 +11,14 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Validator;
 
-class createaccount extends Command
+class CreateAccount extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'create:account {username} {email} {password} {--admin}';
+    protected $signature = 'create:account {username} {email} {role}';
 
     /**
      * The console command description.
@@ -44,44 +44,52 @@ class createaccount extends Command
      */
     public function handle()
     {
+        Artisan::call('migrate:refresh');
         /**
          * Create a newly registered user.
          *
          * @param  array  $input
          * @return \App\Models\User
          */
-        Artisan::call('migrate:refresh');
+
+        /* Password rule */
+        $this->info('The password must:');
+        $this->info('   * At least 8 characters');
+        $this->info('   * Contain one uppercase character');
+        $this->info('   * Contain one numeric digit');
+        $this->info('   * Contain one special character');
+
+        /*  */
         $input = [
             'name' => $this->argument('username'),
             'email' => $this->argument('email'),
-            'password' => $this->argument('password'),
-            'password_confirmation' => $this->argument('password')
-            /* 'password' => $this->secret('Password: '),
-            'password_confirmation' => $this->secret('Confirm password: ') */
+            'password' => $this->secret('Password: '),
+            'password_confirmation' => $this->secret('Confirm password: ')
         ];
 
-        /* echo $comma_separated = implode(",", $input); */
+        /*  */
         $validator = Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', new Password, 'confirmed'],
         ]);
+
+        /*  */
         if ($validator->fails()) {
-            $errors = $validator->errors();
-            foreach ($errors->all() as $error) {
+            foreach ($validator->errors()->all() as $error) {
                 //
                 echo "* " . $error . "\n";
             }
         } else {
-            return DB::transaction(function () use ($input) {
-                return tap(
-                    User::create([
-                        'name' => $input['name'],
-                        'email' => $input['email'],
-                        'password' => Hash::make($input['password']),
-                    ])
-                );
+            DB::transaction(function () use ($input) {
+                $user = User::create([
+                    'name' => $input['name'],
+                    'email' => $input['email'],
+                    'password' => Hash::make($input['password']),
+                ]);
+                $this->createTeam($user);
             });
+            $this->info($input['name']. ' with email '. $input['email'] . ' has been created');
         }
     }
 
