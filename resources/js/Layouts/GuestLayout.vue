@@ -32,5 +32,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-  @import "../../css/guest.css";
+  @import "@css/guest.css";
 </style>

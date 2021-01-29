@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import AdminLayout from "../../Layouts/AdminLayout.vue";
+import AdminLayout from "@/Layouts/AdminLayout.vue";
 export default {
   components: { AdminLayout },
 };
 </script>
 
-<style lang="scss" scoped>
-@import "../../../scss/Admin/material-dashboard.scss";
+<style lang="scss">
+
 </style>
