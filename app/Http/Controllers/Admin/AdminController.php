@@ -62,7 +62,7 @@ class AdminController extends Controller
     public function show(Admin $admin)
     {
         //
-        return Inertia::render('AdminPage');
+        return Inertia::render('Admin/Dashboard');
 
     }
 

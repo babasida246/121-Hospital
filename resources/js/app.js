@@ -61,6 +61,9 @@ Vue.use(IconsPlugin)
 import VueSmoothScroll from 'vue2-smooth-scroll'
 Vue.use(VueSmoothScroll)
 
+/* Register Service Worker */
+import './registerServiceWorker'
+
 const app = document.getElementById('app');
 
 new Vue({
@@ -69,6 +72,6 @@ new Vue({
             props: {
                 initialPage: JSON.parse(app.dataset.page),
                 resolveComponent: (name) => require(`./Pages/${name}`).default,
-            },
+            },            
         }),
 }).$mount(app);

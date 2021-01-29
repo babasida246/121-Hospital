@@ -53,7 +53,9 @@
         </p>
 
         <div class="icon-box">
-          <div class="icon"><i class="bx bx-list-ul"></i></div>
+          <div class="icon">
+            <i class="bx bx-list-ul"></i>
+          </div>
           <h4 class="title"><a href="">Bảng giá dịch vụ</a></h4>
           <p class="description">
             Voluptatum deleniti atque corrupti quos dolores et quas molestias

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import AppHeader from "../Components/Guest/Header.vue";
+import {Header as AppHeader} from "../Components/Guest"; 
 
 export default {
   components: {
@@ -32,5 +32,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-  @import "../../css/homepage.css";
+  @import "../../css/guest.css";
 </style>
