@@ -1,58 +1,43 @@
 <template>
   <ul class="nav nav-mobile-menu">
-    <li>
-      <md-field>
-        <label>Search</label>
-        <md-input v-model="search" type="text"></md-input>
-      </md-field>
+    <base-dropdown>
+      <template slot="title">
+        <i class="fa fa-globe"></i>
+        <b class="caret"></b>
+        <span class="notification">5 Notifications</span>
+      </template>
+      <a class="dropdown-item" href="#">Notification 1</a>
+      <a class="dropdown-item" href="#">Notification 2</a>
+      <a class="dropdown-item" href="#">Notification 3</a>
+      <a class="dropdown-item" href="#">Notification 4</a>
+      <a class="dropdown-item" href="#">Another notification</a>
+    </base-dropdown>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <i class="nc-icon nc-zoom-split hidden-lg-up"></i>
+        <span class="d-lg-none">Search</span>
+      </a>
     </li>
-    <li>
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <i class="material-icons">dashboard</i>
-        <p>Dashboard</p></a
-      >
-    </li>
-    <li>
-      <drop-down>
-        <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
-          <i class="material-icons">notifications</i>
-          <span class="notification">5</span>
-          <p>Notifications</p>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-right">
-          <li><a href="#">Mike John responded to your email</a></li>
-          <li><a href="#">You have 5 new tasks</a></li>
-          <li><a href="#">You're now friend with Andrew</a></li>
-          <li><a href="#">Another Notification</a></li>
-          <li><a href="#">Another One</a></li>
-        </ul>
-      </drop-down>
-    </li>
-    <li>
-      <a href="#" data-toggle="dropdown" class="dropdown-toggle"
-        ><i class="material-icons">person</i>
-        <p>Profile</p></a
-      >
+    <base-dropdown title="Dropdown">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </base-dropdown>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#pablo">
+        <span class="no-icon">Log out</span>
+      </a>
     </li>
   </ul>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      search: null,
-      selectedEmployee: null,
-      employees: [
-        "Jim Halpert",
-        "Dwight Schrute",
-        "Michael Scott",
-        "Pam Beesly",
-        "Angela Martin",
-        "Kelly Kapoor",
-        "Ryan Howard",
-        "Kevin Malone"
-      ]
-    };
+  export default {
+    name: 'mobile-menu'
   }
-};
 </script>
+<style>
+</style>

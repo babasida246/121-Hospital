@@ -49,6 +49,7 @@ Vue.component('font-awesome-icon')
 /* Vuesax */
 import Vuesax from 'vuesax'
 Vue.use(Vuesax)
+import 'vuesax/dist/vuesax.css'
 import 'material-icons/iconfont/material-icons.css';
 
 /* Bootstrap-Vue */
@@ -56,6 +57,10 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
+
+// LightBootstrap plugin
+import LightBootstrap from './light-bootstrap-main'
+Vue.use(LightBootstrap)
 
 /* VueSmoothScroll */
 import VueSmoothScroll from 'vue2-smooth-scroll'

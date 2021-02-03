@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\admin\User\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +16,7 @@ use App\Http\Controllers\Admin\AdminController;
 
 Route::get('/', [AdminController::class, 'show'])->name('admin');
 
+/* User route */
+Route::prefix('user')->group(function () {
+    Route::get('/list', [UserController::class, 'show'])->name('user.list');
+});

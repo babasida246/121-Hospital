@@ -1,38 +1,26 @@
 <template>
   <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <nav>
-        <ul>
+        <ul class="footer-menu">
           <li>
-            <a href="https://www.creative-tim.com">Creative Tim</a>
-          </li>
-          <li>
-            <a href="https://creative-tim.com/presentation">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="http://blog.creative-tim.com">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
-            </a>
+            <router-link :to="{path:'/admin'}">Dashboard</router-link>
           </li>
         </ul>
       </nav>
       <div class="copyright text-center">
-        &copy; {{ new Date().getFullYear() }}
-        <a href="https://www.creative-tim.com/?ref=mdf-vuejs" target="_blank"
-          >Creative Tim</a
-        >, made with <i class="fa fa-heart heart"></i> for a better web
+        &copy; Coded with
+        <i class="fa fa-heart heart"></i> by
+        <a href="https://binarcode.com" target="_blank">BinarCode</a>.
+        Designed by <a href="https://www.creative-tim.com/?ref=pdf-vuejs" target="_blank">Creative Tim</a>.
       </div>
     </div>
   </footer>
 </template>
 <script>
-export default {};
+  export default {}
+
 </script>
-<style></style>
+<style>
+
+</style>

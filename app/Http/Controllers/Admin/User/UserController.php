@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Admin\User;
 
-use App\Http\Controllers\Controller;
-use App\Models\UserGroup;
+use Inertia\Inertia;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\User;
 
-class UserGroupController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,16 +15,6 @@ class UserGroupController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
     {
         //
     }
@@ -42,33 +33,23 @@ class UserGroupController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\UserGroup  $userGroup
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(UserGroup $userGroup)
+    public function show(User $user)
     {
         //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\UserGroup  $userGroup
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(UserGroup $userGroup)
-    {
-        //
+        return Inertia::render('Admin/TableList');       
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\UserGroup  $userGroup
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, UserGroup $userGroup)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +57,10 @@ class UserGroupController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\UserGroup  $userGroup
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(UserGroup $userGroup)
+    public function destroy($id)
     {
         //
     }

@@ -1,16 +1,16 @@
 <template>
-  <admin-layout>
-    
-  </admin-layout>
+    <dashboard-layout></dashboard-layout>
 </template>
 
 <script>
-import AdminLayout from "@/Layouts/AdminLayout.vue";
+import DashboardLayout from '../../Layouts/Admin/DashboardLayout'
 export default {
-  components: { AdminLayout },
-};
+    components:{
+        DashboardLayout
+    }
+}
 </script>
 
-<style lang="scss">
+<style>
 
 </style>
